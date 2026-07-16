@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Gigiri",
-        "img": "assets/img/hoods/gigiri.svg",
+        "img": "assets/img/hoods/gigiri.jpg",
         "icon": "company",
         "tagline": "Walk to the UN",
         "text": "The diplomatic quarter. Minutes from the UN complex, the US Embassy and the International School of Kenya — most staff here never drive to work.",
@@ -12,7 +12,7 @@
     {
         "id": 2,
         "name": "Runda",
-        "img": "assets/img/hoods/runda.svg",
+        "img": "assets/img/hoods/runda.jpg",
         "icon": "house",
         "tagline": "Compounds and gardens",
         "text": "Managed compounds with shared pools and playgrounds, built for families on multi-year postings. The default first-posting answer.",
@@ -22,7 +22,7 @@
     {
         "id": 3,
         "name": "Karen",
-        "img": "assets/img/hoods/karen.svg",
+        "img": "assets/img/hoods/karen.jpg",
         "icon": "house",
         "tagline": "Space, at a distance",
         "text": "Acre plots, horses and forest air. You trade the commute for room to breathe — and for Brookhouse and Hillcrest on your doorstep.",
@@ -32,7 +32,7 @@
     {
         "id": 4,
         "name": "Westlands",
-        "img": "assets/img/hoods/westlands.svg",
+        "img": "assets/img/hoods/westlands.jpg",
         "icon": "building",
         "tagline": "Serviced and central",
         "text": "Serviced apartments above the malls and offices. Six-month leases, no garden to manage — the short-assignment choice.",
@@ -42,7 +42,7 @@
     {
         "id": 5,
         "name": "Lavington",
-        "img": "assets/img/hoods/lavington.svg",
+        "img": "assets/img/hoods/lavington.jpg",
         "icon": "house",
         "tagline": "The middle ground",
         "text": "Leafy, walkable and central, with townhouses that suit families who want the city rather than a compound.",
@@ -52,7 +52,7 @@
     {
         "id": 6,
         "name": "Kilimani",
-        "img": "assets/img/hoods/kilimani.svg",
+        "img": "assets/img/hoods/kilimani.jpg",
         "icon": "building",
         "tagline": "Closest to the office",
         "text": "Apartments with pools and gyms, walking distance to Yaya Centre and the shortest run to Upper Hill and the city centre.",

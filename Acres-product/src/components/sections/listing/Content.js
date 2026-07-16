@@ -8,11 +8,19 @@ import Notfound from './Notfound';
 import listings from '../../../data/listings.json';
 import { findListing, usd, kes } from '../../../helper/listings';
 
-// Real photography doesn't exist yet — the template shipped only grey
-// placeholders — so the gallery shows the home's own tile until photos land.
-// Swap this for item.gallery once the shoot is done.
+// Illustrative room shots, deliberately shared by every listing — they're stock,
+// not the rooms in that house (see public/assets/img/CREDITS.md). Composed here
+// rather than stored on all twelve listings, which would just repeat itself.
+const ROOMS = [
+    'assets/img/rooms/living-room.jpg',
+    'assets/img/rooms/bedroom.jpg',
+    'assets/img/rooms/kitchen.jpg',
+    'assets/img/rooms/bathroom.jpg',
+];
+
+/** The home's own exterior first, then the shared rooms. */
 function galleryFor(item) {
-    return [item.gridimg];
+    return [item.gridimg, ...ROOMS];
 }
 
 // Each nearby entry carries a type; give each its own icon so the list scans.
@@ -55,9 +63,9 @@ function Content() {
                 content={`${item.beds}-bedroom ${item.propertyType.toLowerCase()} in ${item.neighbourhood}, Nairobi. ${item.furnished}, ${item.leaseMin}-month minimum lease, available ${item.available}.`}
             />
 
-            {/* Gallery. A carousel of one image is worse than an image: slick
-                clones a lone slide and renders it repeatedly. Restore the
-                Slider here once each home has a real photo set. */}
+            {/* Gallery. The single-image branch matters: slick clones a lone
+                slide and renders it repeatedly, so a carousel of one is worse
+                than a plain image. */}
             {gallery.length > 1 ? (
                 <Slider {...settings} className="acr-single-slider">
                     {gallery.map((img, i) => (

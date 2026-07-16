@@ -78,14 +78,14 @@ step to making this real.
 
 ## Content status
 
-Two things are stand-ins, and both are deliberate:
+Everything visible is a stand-in. That's fine for a demo and **not fine for
+launch** — see `public/assets/img/CREDITS.md`.
 
-- **No photography.** The template shipped only grey 1280×850 placeholders (the
-  avatars were stamped "Powered by HTML.COM"), so the tiles under
-  `public/assets/img/{homes,hoods,avatars,scenes}` are generated brand SVGs.
-  Drop real photos in and repoint `gridimg` / `listimg` in `listings.json`.
-  For a multi-photo gallery, restore the `Slider` in `sections/listing/Content.js`
-  — it's currently bypassed because a carousel of one image renders it repeatedly.
+- **The photos are stock, not the properties.** Free-licensed Pexels photography
+  (one exterior per home; the `rooms/` shots are shared by all twelve). Showing a
+  stock house as the home being advertised misrepresents it to a tenant, so these
+  must be replaced with real photography of each home before this goes live.
+  Consultant avatars are generated initials SVGs; scene backdrops likewise.
 - **The copy is plausible fiction.** Prices, consultants, testimonials and the
   "400+ families" stat were written to make the UI legible. Realistic for Nairobi,
   not real.

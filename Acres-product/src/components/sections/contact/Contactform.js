@@ -30,7 +30,7 @@ class Contactform extends Component {
                                             <h5>GMT+3</h5>
                                             <div className="acr-location-address">
                                                 <p>Mon–Fri, 8am–7pm<br />Sat, 9am–1pm</p>
-                                                <a href="mailto:hello@karibuhomes.co.ke">hello@karibuhomes.co.ke</a>
+                                                <a href="mailto:hello@Expert Homes.co.ke">hello@Expert Homes.co.ke</a>
                                             </div>
                                         </div>
                                     </div>
