@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Preloader
 const Preloader = React.lazy(() => import("./components/layouts/Preloader"));
@@ -50,47 +50,47 @@ function App() {
     <Router>
       <Suspense fallback={<div></div>}>
         <Preloader />
-        <Switch>
+        <Routes>
           {/* Homepages */}
-          <Route exact path="/" component={Home} />
-          <Route path="/home-v2" component={Hometwo} />
-          <Route path="/home-v3" component={Homethree} />
-          <Route path="/home-v4" component={Homefour} />
-          <Route path="/home-v5" component={Homefive} />
+          <Route path="/" element={<Home />} />
+          <Route path="/home-v2" element={<Hometwo />} />
+          <Route path="/home-v3" element={<Homethree />} />
+          <Route path="/home-v4" element={<Homefour />} />
+          <Route path="/home-v5" element={<Homefive />} />
           {/* Blog */}
-          <Route path="/blog-grid" component={Bloggrid} />
-          <Route path="/blog-list" component={Bloglist} />
-          <Route path="/blog-single" component={Blogsingle} />
+          <Route path="/blog-grid" element={<Bloggrid />} />
+          <Route path="/blog-list" element={<Bloglist />} />
+          <Route path="/blog-single" element={<Blogsingle />} />
           {/* Pages */}
-          <Route path="/about" component={About} />
-          <Route path="/services" component={Services} />
-          <Route path="/faq" component={Faq} />
-          <Route path="/pricing" component={Pricing} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/coming-soon" component={Comingsoon} />
-          <Route path="/error-404" component={Error} />
-          <Route path="/login" component={Login} />
-          <Route path="/register" component={Register} />
-          <Route path="/legal" component={Legal} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/coming-soon" element={<Comingsoon />} />
+          <Route path="/error-404" element={<Error />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/legal" element={<Legal />} />
           {/* Listings */}
-          <Route path="/listing-grid" component={Listinggrid} />
-          <Route path="/listing-list" component={Listinglist} />
-          <Route path="/listing-map" component={Listingmap} />
-          <Route path="/listing-details-v1" component={Listingdetailsone} />
-          <Route path="/listing-details-v2" component={Listingdetailstwo} />
-          <Route path="/listing-details-v3" component={Listingdetailsthree} />
-          <Route path="/submit-listing" component={Submitlisting} />
-          <Route path="/compare-listings" component={Comparelistings} />
+          <Route path="/listing-grid" element={<Listinggrid />} />
+          <Route path="/listing-list" element={<Listinglist />} />
+          <Route path="/listing-map" element={<Listingmap />} />
+          <Route path="/listing-details-v1" element={<Listingdetailsone />} />
+          <Route path="/listing-details-v2" element={<Listingdetailstwo />} />
+          <Route path="/listing-details-v3" element={<Listingdetailsthree />} />
+          <Route path="/submit-listing" element={<Submitlisting />} />
+          <Route path="/compare-listings" element={<Comparelistings />} />
           {/* Agents */}
-          <Route path="/agent-archive" component={Agentarchive} />
-          <Route path="/agent-details" component={Agentdetails} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/profile-listings" component={Profilelistings} />
-          <Route path="/profile-saved-listings" component={Profilesavedlistings} />
+          <Route path="/agent-archive" element={<Agentarchive />} />
+          <Route path="/agent-details" element={<Agentdetails />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile-listings" element={<Profilelistings />} />
+          <Route path="/profile-saved-listings" element={<Profilesavedlistings />} />
           {/* Agency */}
-          <Route path="/agency-archive" component={Agencyarchive} />
-          <Route path="/agency-details" component={Agencydetails} />
-        </Switch>
+          <Route path="/agency-archive" element={<Agencyarchive />} />
+          <Route path="/agency-details" element={<Agencydetails />} />
+        </Routes>
       </Suspense>
     </Router>
   );

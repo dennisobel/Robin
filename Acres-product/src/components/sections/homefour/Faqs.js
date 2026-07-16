@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Accordion, Card, NavLink } from 'react-bootstrap'
+import Accordiontoggle from '../../layouts/Accordiontoggle';
 import { Link } from 'react-router-dom';
 import contactinfo from '../../../data/contactinfo.json';
 
@@ -33,9 +34,9 @@ class Faqs extends Component {
                                         </Card.Body>
                                     </Accordion.Collapse>
                                     <Card.Header>
-                                        <Accordion.Toggle as={NavLink} variant="link" eventKey="0">
+                                        <Accordiontoggle as={NavLink} variant="link" eventKey="0">
                                             How can I start with buying a home?
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                     </Card.Header>
                                 </Card>
                                 <Card>
@@ -56,9 +57,9 @@ class Faqs extends Component {
                                         </Card.Body>
                                     </Accordion.Collapse>
                                     <Card.Header>
-                                        <Accordion.Toggle as={NavLink} variant="link" eventKey="1">
+                                        <Accordiontoggle as={NavLink} variant="link" eventKey="1">
                                             Is the service free?
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                     </Card.Header>
                                 </Card>
                                 <Card>
@@ -79,9 +80,9 @@ class Faqs extends Component {
                                         </Card.Body>
                                     </Accordion.Collapse>
                                     <Card.Header>
-                                        <Accordion.Toggle as={NavLink} variant="link" eventKey="2">
+                                        <Accordiontoggle as={NavLink} variant="link" eventKey="2">
                                             How many agents can I have at once?
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                     </Card.Header>
                                 </Card>
                             </Accordion>

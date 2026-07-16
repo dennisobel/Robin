@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { blogblock } from '../../../data/blog.json';
 import Sidebar from '../../layouts/Blogsidebar';
-import Masonry from 'react-masonry-component';
 import classNames from 'classnames';
 import Loader from '../../layouts/Loader';
 
@@ -82,13 +81,6 @@ class Content extends Component {
                 </article>
             </div>
         });
-        const imagesLoadedOptions = {
-            itemSelector: '.masonry-item',
-            percentPosition: false,
-            resize: true,
-            fitWidth: true
-        };
-
         // Logic for displaying page numbers
         const pageNumbers = [];
         for (let i = 1; i <= Math.ceil(items.length / itemsPerPage); i++) {
@@ -110,11 +102,11 @@ class Content extends Component {
                     <div className="row">
                         {/* Posts Start */}
                         <div className="col-lg-8">
-                            <Masonry className="row masonry" imagesLoadedOptions={imagesLoadedOptions}>
+                            <div className="row masonry">
                                 {/* Listing Start */}
                                 {this.state.loading === false ? renderitems : <Loader />}
                                 {/* Listing End */}
-                            </Masonry>
+                            </div>
                             {/* Pagination Start */}
                             {pageNumbers.length > 1 ?
                                 <ul className="pagination">

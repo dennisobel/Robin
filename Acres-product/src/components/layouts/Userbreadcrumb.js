@@ -12,7 +12,7 @@ class Userbreadcrumb extends Component {
                             <h3 className="text-white">Randy Blue</h3>
                             <span className="user-email">randy_blue@hotmail.com</span>
                         </div>
-                        <Link to="/submit-listing" className="btn-custom secondary mr-0">Submit Listing <i className="fas mr-0 fa-plus" /> </Link>
+                        <Link to="/submit-listing" className="btn-custom secondary me-0">Submit Listing <i className="fas me-0 fa-plus" /> </Link>
                     </div>
                 </div>
             </div>

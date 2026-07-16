@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { locationlist, statuslist, pricerangelist } from '../../../data/select.json';
-import Select2 from 'react-select2-wrapper';
+import Select2 from '../../layouts/Select2';
 
 class Banner extends Component {
     render() {

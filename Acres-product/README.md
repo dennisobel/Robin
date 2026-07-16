@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Acres — Real Estate Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React real-estate template: 33 pages, five homepage variants, listings/agents/agency
+sections, and a Leaflet map. All content is static — see [Data](#data) below.
 
-## Available Scripts
+## Stack
 
-In the project directory, you can run:
+| | |
+|---|---|
+| React | 19 |
+| Build tool | Vite 7 |
+| Routing | react-router-dom 7 |
+| UI | Bootstrap 5 + react-bootstrap 2 |
+| Map | Leaflet 1.9 + react-leaflet 5 |
 
-### `npm start`
+## Scripts
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm install
+npm start      # dev server on http://localhost:3000
+npm run build  # production build -> dist/
+npm run preview # serve the production build locally
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Requires Node 20+.
 
-### `npm test`
+## Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Pages compose sections; sections hold the markup.
 
-### `npm run build`
+```
+index.html              Vite entry (page title/description come from React, not here)
+vite.config.js
+src/
+  index.js              createRoot + global CSS imports
+  App.js                all 33 routes, each lazy-loaded
+  components/
+    pages/              one file per route: <title> + Header + Content + Footer
+    sections/<page>/    Content.js lists that page's sections; siblings hold markup
+    layouts/            Header/Footer/Menu/sidebars + shared widgets
+  data/                 JSON content (see below)
+  helper/               Navigationhelper.js — base class the Header variants extend
+  assets/css/style.css  the template's own 6.5k-line stylesheet
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Note: `components/layouts/App.js` is **not** the app — it is a "Download Our App"
+footer widget. The real entry is `src/App.js`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Data
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+There is no backend. Every listing, agent, and blog post is hardcoded in
+`src/data/*.json`, and body copy is Lorem Ipsum. Forms (login, register, contact,
+submit-listing) render but do not submit anywhere; the sidebar filters and the
+"loading" spinner on paginated lists are presentational only.
 
-### `npm run eject`
+Swapping `src/data/*.json` for API calls is the natural first step to making this
+a real application.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Local conventions
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A few things deviate from stock React and are load-bearing:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **JSX lives in `.js` files.** `vite.config.js` widens the esbuild loader to match;
+  do not remove that config without renaming the files to `.jsx`.
+- **`process.env.PUBLIC_URL`** is used in ~150 asset paths (a Create React App
+  habit). `vite.config.js` defines it as `''` so those paths resolve against
+  `public/`. New code should just use `/assets/...`.
+- **Page metadata** uses React 19's native hoisting: pages render `<title>` and
+  `<meta>` directly and React moves them into `<head>`. `index.html` deliberately
+  declares neither, so nothing is duplicated.
+- **Desktop nav is hardcoded** in `layouts/Menu.js` while the mobile menu is driven
+  by `data/navigation.json` — nav changes must be made in both.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Migrated from Create React App
 
-## Learn More
+This project previously ran React 17 on `react-scripts` 4. During the upgrade the
+following abandoned packages were replaced; the shims keep the original call
+signatures so the surrounding markup and CSS were left untouched:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Removed | Replaced with |
+|---|---|
+| `react-meta-tags` | React 19 native `<title>`/`<meta>` hoisting |
+| `react-select2-wrapper` | `layouts/Select2.js` (native `<select>`, `.acr-select2`) |
+| `react-masonry-component` | plain Bootstrap grid (`.masonry` had no CSS rules) |
+| `Accordion.Toggle` (react-bootstrap v1) | `layouts/Accordiontoggle.js` (`useAccordionButton`) |
+| `react-scripts`, `web-vitals`, `@testing-library/*` | Vite (no test suite existed) |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+jQuery and `magnific-popup` are **still required** — they power the lightbox
+galleries in `about/Video.js`, `blogsingle/Content.js`, `services/Gallery.js`, and
+the listing-details wrappers.

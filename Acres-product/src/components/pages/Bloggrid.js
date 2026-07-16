@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import MetaTags from "react-meta-tags";
 import Header from '../layouts/Header';
 import Breadcrumb from '../layouts/Breadcrumb';
 import Footer from '../layouts/Footer';
@@ -9,13 +8,8 @@ class Bloggrid extends Component {
     render() {
         return (
             <Fragment>
-                <MetaTags>
-                    <title>Acres - Real Estate React Template | Blog Grid</title>
-                    <meta
-                        name="description"
-                        content="#"
-                    />
-                </MetaTags>
+                <title>Acres - Real Estate React Template | Blog Grid</title>
+                <meta name="description" content="#" />
                 <Header/>
                 <Breadcrumb breadcrumb={{pagename:'Blog Grid'}} />
                 <Content/>

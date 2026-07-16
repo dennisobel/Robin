@@ -4,7 +4,7 @@ import listing from '../../../data/listings.json';
 import { locationlist, statuslist, pricerangelist, bedslist, bathroomslist, typelist } from '../../../data/select.json';
 import { OverlayTrigger, Tooltip, Dropdown, NavLink } from 'react-bootstrap';
 import Calculator from '../../layouts/Calculator';
-import Select2 from 'react-select2-wrapper';
+import Select2 from '../../layouts/Select2';
 
 const gallerytip = (
     <Tooltip>

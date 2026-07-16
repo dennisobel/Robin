@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Tab, Nav, Accordion, Card, NavLink } from 'react-bootstrap';
+import Accordiontoggle from '../../layouts/Accordiontoggle';
 import Sidebar from '../../layouts/Blogsidebar';
 import Formbox from '../../layouts/Formbox';
 
@@ -50,9 +51,9 @@ class Content extends Component {
                                                     </Card.Body>
                                                 </Accordion.Collapse>
                                                 <Card.Header>
-                                                    <Accordion.Toggle as={NavLink} variant="link" eventKey="0">
+                                                    <Accordiontoggle as={NavLink} variant="link" eventKey="0">
                                                         How can I start with buying a home?
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                                 </Card.Header>
                                             </Card>
                                             <Card>
@@ -83,9 +84,9 @@ class Content extends Component {
                                                     </Card.Body>
                                                 </Accordion.Collapse>
                                                 <Card.Header>
-                                                    <Accordion.Toggle as={NavLink} variant="link" eventKey="1">
+                                                    <Accordiontoggle as={NavLink} variant="link" eventKey="1">
                                                         Is the service free?
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                                 </Card.Header>
                                             </Card>
                                             <Card>
@@ -116,9 +117,9 @@ class Content extends Component {
                                                     </Card.Body>
                                                 </Accordion.Collapse>
                                                 <Card.Header>
-                                                    <Accordion.Toggle as={NavLink} variant="link" eventKey="2">
+                                                    <Accordiontoggle as={NavLink} variant="link" eventKey="2">
                                                         How many agents can I have at once?
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                                 </Card.Header>
                                             </Card>
                                         </Accordion>
@@ -153,9 +154,9 @@ class Content extends Component {
                                                     </Card.Body>
                                                 </Accordion.Collapse>
                                                 <Card.Header>
-                                                    <Accordion.Toggle as={NavLink} variant="link" eventKey="10">
+                                                    <Accordiontoggle as={NavLink} variant="link" eventKey="10">
                                                         How can I submit my product?
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                                 </Card.Header>
                                             </Card>
                                             <Card>
@@ -186,9 +187,9 @@ class Content extends Component {
                                                     </Card.Body>
                                                 </Accordion.Collapse>
                                                 <Card.Header>
-                                                    <Accordion.Toggle as={NavLink} variant="link" eventKey="11">
+                                                    <Accordiontoggle as={NavLink} variant="link" eventKey="11">
                                                         For how long does my product stay posted?
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                                 </Card.Header>
                                             </Card>
                                             <Card>
@@ -219,9 +220,9 @@ class Content extends Component {
                                                     </Card.Body>
                                                 </Accordion.Collapse>
                                                 <Card.Header>
-                                                    <Accordion.Toggle as={NavLink} variant="link" eventKey="12">
+                                                    <Accordiontoggle as={NavLink} variant="link" eventKey="12">
                                                         Can I submit products for free?
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                                 </Card.Header>
                                             </Card>
                                         </Accordion>

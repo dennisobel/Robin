@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Calculator from './Calculator';
-import Select2 from 'react-select2-wrapper';
+import Select2 from './Select2';
 import listing from '../../data/listings.json';
 import { locationlist, statuslist, pricerangelist, bedslist, bathroomslist, typelist } from '../../data/select.json';
 import { Collapse } from 'react-bootstrap';

@@ -4,7 +4,7 @@ import { OverlayTrigger, Tooltip, Dropdown, NavLink } from 'react-bootstrap';
 import listing from '../../../data/listings.json';
 import { locationlist, statuslist, pricerangelist, bedslist, bathroomslist, typelist, diameterlist, floorlist, sortbylist } from '../../../data/select.json';
 import Listingmap from './Listingmap';
-import Select2 from 'react-select2-wrapper';
+import Select2 from '../../layouts/Select2';
 import classNames from 'classnames';
 
 const gallerytip = (
@@ -129,7 +129,7 @@ class Content extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="text-right">
+                            <div className="text-end">
                                 <button type="submit" className="filter-trigger btn-custom">Apply filters</button>
                             </div>
                         </form>
@@ -142,7 +142,7 @@ class Content extends Component {
                                     <button type="submit" className="btn-custom" name="button"><i className="flaticon-search" /></button>
                                 </div>
                             </div>
-                            <div className="col-lg-6 form-group text-right">
+                            <div className="col-lg-6 form-group text-end">
                                 <button type="button" className="btn-custom-2 light-grey filter-trigger" onClick={this.advancetoggle}>Advanced Search</button>
                             </div>
                         </div>

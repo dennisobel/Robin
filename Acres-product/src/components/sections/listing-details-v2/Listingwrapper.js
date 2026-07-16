@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { OverlayTrigger, Tooltip, Dropdown, NavLink, Accordion, Card } from 'react-bootstrap';
+import Accordiontoggle from '../../layouts/Accordiontoggle';
 import listing from '../../../data/listings.json';
 import Calculator from '../../layouts/Calculator';
 import $ from 'jquery';
@@ -393,9 +394,9 @@ class Listingwrapper extends Component {
                                             </Card.Body>
                                         </Accordion.Collapse>
                                         <Card.Header>
-                                            <Accordion.Toggle as={NavLink} variant="link" eventKey="0">
+                                            <Accordiontoggle as={NavLink} variant="link" eventKey="0">
                                                 1979 - 1999
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                         </Card.Header>
                                     </Card>
                                     <Card>
@@ -413,9 +414,9 @@ class Listingwrapper extends Component {
                                             </Card.Body>
                                         </Accordion.Collapse>
                                         <Card.Header>
-                                            <Accordion.Toggle as={NavLink} variant="link" eventKey="1">
+                                            <Accordiontoggle as={NavLink} variant="link" eventKey="1">
                                                 2000 - 2012
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                         </Card.Header>
                                     </Card>
                                     <Card>
@@ -433,9 +434,9 @@ class Listingwrapper extends Component {
                                             </Card.Body>
                                         </Accordion.Collapse>
                                         <Card.Header>
-                                            <Accordion.Toggle as={NavLink} variant="link" eventKey="2">
+                                            <Accordiontoggle as={NavLink} variant="link" eventKey="2">
                                                 2013 - Till date
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                         </Card.Header>
                                     </Card>
                                 </Accordion>

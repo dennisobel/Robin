@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Accordion, Card, NavLink } from 'react-bootstrap'
+import Accordiontoggle from '../../layouts/Accordiontoggle';
 import Formbox from '../../layouts/Formbox';
 
 class Contactform extends Component {
@@ -30,9 +31,9 @@ class Contactform extends Component {
                                             </Card.Body>
                                     </Accordion.Collapse>
                                     <Card.Header>
-                                        <Accordion.Toggle as={NavLink} variant="link" eventKey="0">
+                                        <Accordiontoggle as={NavLink} variant="link" eventKey="0">
                                             How can I submit my product?
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                     </Card.Header>
                                 </Card>
                                 <Card>
@@ -45,9 +46,9 @@ class Contactform extends Component {
                                             </Card.Body>
                                     </Accordion.Collapse>
                                     <Card.Header>
-                                        <Accordion.Toggle as={NavLink} variant="link" eventKey="1">
+                                        <Accordiontoggle as={NavLink} variant="link" eventKey="1">
                                             For how long does my product stay posted?"
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                     </Card.Header>
                                 </Card>
                                 <Card>
@@ -60,9 +61,9 @@ class Contactform extends Component {
                                             </Card.Body>
                                     </Accordion.Collapse>
                                     <Card.Header>
-                                        <Accordion.Toggle as={NavLink} variant="link" eventKey="2">
+                                        <Accordiontoggle as={NavLink} variant="link" eventKey="2">
                                             Can I submit products for free?
-                                            </Accordion.Toggle>
+                                            </Accordiontoggle>
                                     </Card.Header>
                                 </Card>
                             </Accordion>
