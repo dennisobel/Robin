@@ -8,8 +8,8 @@ class Error extends Component {
     render() {
         return (
             <Fragment>
-                <title>Acres - Real Estate React Template | Error 404</title>
-                <meta name="description" content="#" />
+                <title>Page not found — Karibu</title>
+                <meta name="description" content="That page has moved or never existed." />
                 <Header/>
                 <Breadcrumb breadcrumb={{pagename:'Error 404'}} />
                 <Content/>

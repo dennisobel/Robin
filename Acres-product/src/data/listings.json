@@ -1,154 +1,808 @@
 [
     {
         "id": 1,
-        "gridimg": "assets/img/listings/1.jpg",
-        "listimg":"assets/img/listings-list/1.jpg",
-        "title": "Iris Watson, Frederick Nebraska 20620",
-        "authorimg": "assets/img/people/2.jpg",
-        "authorname": "Heather Mclayn",
-        "postdate": "March 3, 2020",
-        "monthlyprice": 3500,
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "beds": 3,
-        "bathrooms": 2,
-        "area": 2499,
-        "star":true,
-        "sale":false,
-        "pending":true,
-        "rental":false,
-        "recent":true
+        "slug": "gigiri-garden-villa-4br",
+        "title": "4-Bedroom Garden Villa",
+        "neighbourhood": "Gigiri",
+        "propertyType": "Villa",
+        "lat": -1.2338,
+        "lng": 36.8142,
+        "gridimg": "assets/img/homes/gigiri-garden-villa-4br.svg",
+        "listimg": "assets/img/homes/gigiri-garden-villa-4br.svg",
+        "authorimg": "assets/img/avatars/wanjiru-kamau.svg",
+        "authorname": "Wanjiru Kamau",
+        "monthlyprice": 4200,
+        "kes": 541800,
+        "beds": 4,
+        "bathrooms": 3,
+        "area": 3200,
+        "furnished": "Fully furnished",
+        "leaseMin": 12,
+        "available": "1 Aug 2026",
+        "compound": true,
+        "parking": 2,
+        "security": "24/7 manned gate, electric fence",
+        "text": "A walled garden villa five minutes from the UN complex, on a quiet cul-de-sac shared with three other diplomatic families. Fully furnished to international standard, with a generator and borehole so power and water cuts never reach you.",
+        "amenities": [
+            "Backup generator",
+            "Borehole water",
+            "Staff quarters (DSQ)",
+            "Fibre internet",
+            "Private garden",
+            "Pet friendly"
+        ],
+        "nearby": [
+            {
+                "type": "school",
+                "name": "International School of Kenya",
+                "km": 1.2,
+                "mins": 4
+            },
+            {
+                "type": "work",
+                "name": "UN Complex (UNON)",
+                "km": 2,
+                "mins": 7
+            },
+            {
+                "type": "shopping",
+                "name": "Village Market",
+                "km": 1.5,
+                "mins": 5
+            },
+            {
+                "type": "health",
+                "name": "Gertrude's Children's Hospital",
+                "km": 3.4,
+                "mins": 11
+            },
+            {
+                "type": "leisure",
+                "name": "Karura Forest",
+                "km": 2.1,
+                "mins": 7
+            }
+        ],
+        "star": true,
+        "featured": true
     },
     {
         "id": 2,
-        "gridimg": "assets/img/listings/2.jpg",
-        "listimg":"assets/img/listings-list/2.jpg",
-        "title": "Theodore Lowe, Azusa New York 39531",
-        "authorimg": "assets/img/people/1.jpg",
-        "authorname": "Randy Blue",
-        "postdate": "March 3, 2020",
-        "monthlyprice": 3500,
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "beds": 3,
-        "bathrooms": 2,
-        "area": 2499,
-        "star":true,
-        "sale":true,
-        "pending":false,
-        "rental":false,
-        "recent":true
+        "slug": "runda-family-villa-5br",
+        "title": "5-Bedroom Family Villa, Gated Compound",
+        "neighbourhood": "Runda",
+        "propertyType": "Villa",
+        "lat": -1.2189,
+        "lng": 36.8081,
+        "gridimg": "assets/img/homes/runda-family-villa-5br.svg",
+        "listimg": "assets/img/homes/runda-family-villa-5br.svg",
+        "authorimg": "assets/img/avatars/david-ochieng.svg",
+        "authorname": "David Ochieng",
+        "monthlyprice": 5000,
+        "kes": 645000,
+        "beds": 5,
+        "bathrooms": 4,
+        "area": 4100,
+        "furnished": "Fully furnished",
+        "leaseMin": 24,
+        "available": "15 Jul 2026",
+        "compound": true,
+        "parking": 3,
+        "security": "Compound guard, 24/7 patrol, CCTV",
+        "text": "One of eight houses in a managed Runda compound with a shared pool and playground — the setup most families ask for on a first posting. Large fenced garden, two staff units, and a school bus stop at the gate.",
+        "amenities": [
+            "Backup generator",
+            "Borehole water",
+            "Shared pool",
+            "Playground",
+            "Staff quarters (DSQ)",
+            "Fibre internet",
+            "Pet friendly"
+        ],
+        "nearby": [
+            {
+                "type": "school",
+                "name": "Rosslyn Academy",
+                "km": 2.3,
+                "mins": 8
+            },
+            {
+                "type": "school",
+                "name": "International School of Kenya",
+                "km": 3,
+                "mins": 10
+            },
+            {
+                "type": "work",
+                "name": "UN Complex (UNON)",
+                "km": 3.6,
+                "mins": 12
+            },
+            {
+                "type": "shopping",
+                "name": "Two Rivers Mall",
+                "km": 2.8,
+                "mins": 9
+            },
+            {
+                "type": "leisure",
+                "name": "Karura Forest",
+                "km": 3.2,
+                "mins": 11
+            }
+        ],
+        "star": true,
+        "featured": true
     },
     {
         "id": 3,
-        "gridimg": "assets/img/listings/3.jpg",
-        "listimg":"assets/img/listings-list/3.jpg",
-        "title": "Iris Watson, Frederick Nebraska 20620",
-        "authorimg": "assets/img/people/2.jpg",
-        "authorname": "Heather Mclayn",
-        "postdate": "March 3, 2020",
-        "monthlyprice": 3500,
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "beds": 3,
-        "bathrooms": 2,
-        "area": 2499,
-        "star":false,
-        "sale":false,
-        "pending":true,
-        "rental":false,
-        "recent":true
+        "slug": "karen-colonial-house-4br",
+        "title": "4-Bedroom Colonial House with Acre Garden",
+        "neighbourhood": "Karen",
+        "propertyType": "House",
+        "lat": -1.3197,
+        "lng": 36.7085,
+        "gridimg": "assets/img/homes/karen-colonial-house-4br.svg",
+        "listimg": "assets/img/homes/karen-colonial-house-4br.svg",
+        "authorimg": "assets/img/avatars/aisha-mohamed.svg",
+        "authorname": "Aisha Mohamed",
+        "monthlyprice": 3800,
+        "kes": 490200,
+        "beds": 4,
+        "bathrooms": 3,
+        "area": 3600,
+        "furnished": "Semi-furnished",
+        "leaseMin": 12,
+        "available": "1 Sep 2026",
+        "compound": false,
+        "parking": 3,
+        "security": "Manned gate, electric fence, alarm",
+        "text": "A stone-built colonial house on a full acre, with jacaranda, a vegetable patch and room for a trampoline. Karen trades the short commute for space and quiet — the trade most families with young children end up making.",
+        "amenities": [
+            "Backup generator",
+            "Borehole water",
+            "Fireplace",
+            "Staff quarters (DSQ)",
+            "Fibre internet",
+            "Private garden",
+            "Pet friendly"
+        ],
+        "nearby": [
+            {
+                "type": "school",
+                "name": "Brookhouse School",
+                "km": 2,
+                "mins": 7
+            },
+            {
+                "type": "school",
+                "name": "Hillcrest International School",
+                "km": 3.1,
+                "mins": 10
+            },
+            {
+                "type": "shopping",
+                "name": "The Hub Karen",
+                "km": 2.6,
+                "mins": 9
+            },
+            {
+                "type": "health",
+                "name": "The Karen Hospital",
+                "km": 3.3,
+                "mins": 11
+            },
+            {
+                "type": "leisure",
+                "name": "Karen Country Club",
+                "km": 1.8,
+                "mins": 6
+            }
+        ],
+        "star": true,
+        "featured": true
     },
     {
         "id": 4,
-        "gridimg": "assets/img/listings/4.jpg",
-        "listimg":"assets/img/listings-list/4.jpg",
-        "title": "Iris Watson, Frederick Nebraska 20620",
-        "authorimg": "assets/img/people/2.jpg",
-        "authorname": "Heather Mclayn",
-        "postdate": "March 3, 2020",
-        "monthlyprice": 3500,
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "beds": 3,
-        "bathrooms": 2,
-        "area": 2499,
-        "star":false,
-        "sale":true,
-        "pending":false,
-        "rental":false,
-        "recent":true
+        "slug": "muthaiga-residence-5br",
+        "title": "5-Bedroom Residence, Muthaiga",
+        "neighbourhood": "Muthaiga",
+        "propertyType": "House",
+        "lat": -1.2495,
+        "lng": 36.833,
+        "gridimg": "assets/img/homes/muthaiga-residence-5br.svg",
+        "listimg": "assets/img/homes/muthaiga-residence-5br.svg",
+        "authorimg": "assets/img/avatars/peter-njoroge.svg",
+        "authorname": "Peter Njoroge",
+        "monthlyprice": 6500,
+        "kes": 838500,
+        "beds": 5,
+        "bathrooms": 5,
+        "area": 5200,
+        "furnished": "Fully furnished",
+        "leaseMin": 24,
+        "available": "Immediately",
+        "compound": false,
+        "parking": 4,
+        "security": "24/7 manned gate, CCTV, panic alarm",
+        "text": "A residence used by two previous heads of mission: formal reception rooms that seat twenty, a separate study, and staff infrastructure built for entertaining. Suited to a representational posting rather than a first tour.",
+        "amenities": [
+            "Backup generator",
+            "Borehole water",
+            "Staff quarters (DSQ)",
+            "Fibre internet",
+            "Private garden",
+            "Fireplace",
+            "Study"
+        ],
+        "nearby": [
+            {
+                "type": "school",
+                "name": "German School Nairobi",
+                "km": 1.9,
+                "mins": 6
+            },
+            {
+                "type": "health",
+                "name": "Gertrude's Children's Hospital",
+                "km": 1.4,
+                "mins": 5
+            },
+            {
+                "type": "leisure",
+                "name": "Muthaiga Country Club",
+                "km": 0.9,
+                "mins": 3
+            },
+            {
+                "type": "work",
+                "name": "UN Complex (UNON)",
+                "km": 4.8,
+                "mins": 15
+            },
+            {
+                "type": "shopping",
+                "name": "Village Market",
+                "km": 4.2,
+                "mins": 14
+            }
+        ],
+        "star": true,
+        "featured": false
     },
     {
         "id": 5,
-        "gridimg": "assets/img/listings/5.jpg",
-        "listimg":"assets/img/listings-list/5.jpg",
-        "title": "Iris Watson, Frederick Nebraska 20620",
-        "authorimg": "assets/img/people/2.jpg",
-        "authorname": "Heather Mclayn",
-        "postdate": "March 3, 2020",
-        "monthlyprice": 3500,
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "slug": "lavington-townhouse-3br",
+        "title": "3-Bedroom Townhouse",
+        "neighbourhood": "Lavington",
+        "propertyType": "Townhouse",
+        "lat": -1.2795,
+        "lng": 36.7665,
+        "gridimg": "assets/img/homes/lavington-townhouse-3br.svg",
+        "listimg": "assets/img/homes/lavington-townhouse-3br.svg",
+        "authorimg": "assets/img/avatars/grace-mutiso.svg",
+        "authorname": "Grace Mutiso",
+        "monthlyprice": 2400,
+        "kes": 309600,
         "beds": 3,
-        "bathrooms": 2,
-        "area": 2499,
-        "star":false,
-        "sale":true,
-        "pending":false,
-        "rental":false,
-        "recent":false
+        "bathrooms": 3,
+        "area": 2100,
+        "furnished": "Semi-furnished",
+        "leaseMin": 12,
+        "available": "1 Aug 2026",
+        "compound": true,
+        "parking": 2,
+        "security": "Compound guard, electric fence",
+        "text": "A well-kept townhouse in a small Lavington court, walkable to Valley Arcade. The practical middle ground: central enough for a city-centre commute, green enough for a family.",
+        "amenities": [
+            "Backup generator",
+            "Borehole water",
+            "Shared garden",
+            "Fibre internet",
+            "Staff quarters (DSQ)"
+        ],
+        "nearby": [
+            {
+                "type": "school",
+                "name": "Braeburn Garden Estate School",
+                "km": 2.4,
+                "mins": 8
+            },
+            {
+                "type": "shopping",
+                "name": "Valley Arcade",
+                "km": 0.8,
+                "mins": 3
+            },
+            {
+                "type": "health",
+                "name": "Nairobi Hospital",
+                "km": 4.6,
+                "mins": 15
+            },
+            {
+                "type": "work",
+                "name": "Upper Hill business district",
+                "km": 5.2,
+                "mins": 17
+            },
+            {
+                "type": "leisure",
+                "name": "Arboretum",
+                "km": 3.9,
+                "mins": 13
+            }
+        ],
+        "star": false,
+        "featured": true
     },
     {
         "id": 6,
-        "gridimg": "assets/img/listings/1.jpg",
-        "listimg":"assets/img/listings-list/6.jpg",
-        "title": "Iris Watson, Frederick Nebraska 20620",
-        "authorimg": "assets/img/people/4.jpg",
-        "authorname": "Mike Stanly",
-        "postdate": "March 3, 2020",
-        "monthlyprice": 3500,
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "beds": 3,
+        "slug": "westlands-apartment-2br",
+        "title": "2-Bedroom Furnished Apartment",
+        "neighbourhood": "Westlands",
+        "propertyType": "Apartment",
+        "lat": -1.2657,
+        "lng": 36.8028,
+        "gridimg": "assets/img/homes/westlands-apartment-2br.svg",
+        "listimg": "assets/img/homes/westlands-apartment-2br.svg",
+        "authorimg": "assets/img/avatars/wanjiru-kamau.svg",
+        "authorname": "Wanjiru Kamau",
+        "monthlyprice": 1600,
+        "kes": 206400,
+        "beds": 2,
         "bathrooms": 2,
-        "area": 2499,
-        "star":false,
-        "sale":false,
-        "pending":false,
-        "rental":true,
-        "recent":false
+        "area": 1250,
+        "furnished": "Fully furnished",
+        "leaseMin": 6,
+        "available": "Immediately",
+        "compound": false,
+        "parking": 1,
+        "security": "24/7 reception, CCTV, secure parking",
+        "text": "A serviced apartment on the ninth floor with a gym and rooftop deck in the building. Six-month lease accepted — the usual choice for consultants and short assignments who want to land, work, and not think about a generator.",
+        "amenities": [
+            "Backup generator",
+            "Gym",
+            "Rooftop deck",
+            "Fibre internet",
+            "Serviced weekly",
+            "Secure parking"
+        ],
+        "nearby": [
+            {
+                "type": "shopping",
+                "name": "Sarit Centre",
+                "km": 0.9,
+                "mins": 3
+            },
+            {
+                "type": "shopping",
+                "name": "Westgate Mall",
+                "km": 1.3,
+                "mins": 5
+            },
+            {
+                "type": "health",
+                "name": "Aga Khan University Hospital",
+                "km": 1.8,
+                "mins": 6
+            },
+            {
+                "type": "work",
+                "name": "Westlands offices",
+                "km": 0.5,
+                "mins": 2
+            },
+            {
+                "type": "school",
+                "name": "Braeburn Garden Estate School",
+                "km": 4.1,
+                "mins": 14
+            }
+        ],
+        "star": false,
+        "featured": true
     },
     {
         "id": 7,
-        "gridimg": "assets/img/listings/6.jpg",
-        "listimg":"assets/img/listings-list/7.jpg",
-        "title": "Iris Watson, Frederick Nebraska 20620",
-        "authorimg": "assets/img/people/2.jpg",
-        "authorname": "Heather Mclayn",
-        "postdate": "March 3, 2020",
-        "monthlyprice": 3500,
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "slug": "kilimani-apartment-3br",
+        "title": "3-Bedroom Apartment with Pool",
+        "neighbourhood": "Kilimani",
+        "propertyType": "Apartment",
+        "lat": -1.2921,
+        "lng": 36.7845,
+        "gridimg": "assets/img/homes/kilimani-apartment-3br.svg",
+        "listimg": "assets/img/homes/kilimani-apartment-3br.svg",
+        "authorimg": "assets/img/avatars/david-ochieng.svg",
+        "authorname": "David Ochieng",
+        "monthlyprice": 1900,
+        "kes": 245100,
         "beds": 3,
         "bathrooms": 2,
-        "area": 2499,
-        "star":true,
-        "sale":false,
-        "pending":true,
-        "rental":false,
-        "recent":false
+        "area": 1600,
+        "furnished": "Fully furnished",
+        "leaseMin": 12,
+        "available": "1 Jul 2026",
+        "compound": false,
+        "parking": 1,
+        "security": "24/7 guard, CCTV, intercom",
+        "text": "A bright corner apartment two minutes from Yaya Centre, with a shared pool and a lift that actually works. Central, walkable, and the shortest commute on this list to the city centre and Upper Hill.",
+        "amenities": [
+            "Backup generator",
+            "Shared pool",
+            "Gym",
+            "Fibre internet",
+            "Balcony",
+            "Pet friendly"
+        ],
+        "nearby": [
+            {
+                "type": "shopping",
+                "name": "Yaya Centre",
+                "km": 0.7,
+                "mins": 3
+            },
+            {
+                "type": "health",
+                "name": "Nairobi Hospital",
+                "km": 2.2,
+                "mins": 8
+            },
+            {
+                "type": "work",
+                "name": "Upper Hill business district",
+                "km": 2.6,
+                "mins": 9
+            },
+            {
+                "type": "school",
+                "name": "Braeburn Garden Estate School",
+                "km": 3.8,
+                "mins": 13
+            },
+            {
+                "type": "leisure",
+                "name": "Arboretum",
+                "km": 2.4,
+                "mins": 8
+            }
+        ],
+        "star": false,
+        "featured": false
     },
     {
         "id": 8,
-        "gridimg": "assets/img/listings/7.jpg",
-        "listimg":"assets/img/listings-list/8.jpg",
-        "title": "Theodore Lowe, Azusa New York 39531",
-        "authorimg": "assets/img/people/1.jpg",
-        "authorname": "Randy Blue",
-        "postdate": "March 3, 2020",
+        "slug": "kitisuru-villa-4br",
+        "title": "4-Bedroom Villa, Kitisuru Ridge",
+        "neighbourhood": "Kitisuru",
+        "propertyType": "Villa",
+        "lat": -1.2342,
+        "lng": 36.7825,
+        "gridimg": "assets/img/homes/kitisuru-villa-4br.svg",
+        "listimg": "assets/img/homes/kitisuru-villa-4br.svg",
+        "authorimg": "assets/img/avatars/aisha-mohamed.svg",
+        "authorname": "Aisha Mohamed",
         "monthlyprice": 3500,
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "kes": 451500,
+        "beds": 4,
+        "bathrooms": 4,
+        "area": 3100,
+        "furnished": "Unfurnished",
+        "leaseMin": 24,
+        "available": "1 Oct 2026",
+        "compound": true,
+        "parking": 2,
+        "security": "Compound guard, electric fence, CCTV",
+        "text": "A ridge house with a valley view and afternoon light, unfurnished for families shipping their own container. Quiet, leafy, and still inside the school-run radius for Gigiri.",
+        "amenities": [
+            "Backup generator",
+            "Borehole water",
+            "Staff quarters (DSQ)",
+            "Fibre internet",
+            "Private garden",
+            "Pet friendly"
+        ],
+        "nearby": [
+            {
+                "type": "school",
+                "name": "International School of Kenya",
+                "km": 3.4,
+                "mins": 12
+            },
+            {
+                "type": "work",
+                "name": "UN Complex (UNON)",
+                "km": 4.5,
+                "mins": 15
+            },
+            {
+                "type": "shopping",
+                "name": "Village Market",
+                "km": 4,
+                "mins": 13
+            },
+            {
+                "type": "leisure",
+                "name": "Karura Forest",
+                "km": 2.7,
+                "mins": 9
+            },
+            {
+                "type": "health",
+                "name": "Aga Khan University Hospital",
+                "km": 5.1,
+                "mins": 17
+            }
+        ],
+        "star": false,
+        "featured": false
+    },
+    {
+        "id": 9,
+        "slug": "rosslyn-townhouse-4br",
+        "title": "4-Bedroom Townhouse, Rosslyn",
+        "neighbourhood": "Rosslyn",
+        "propertyType": "Townhouse",
+        "lat": -1.2225,
+        "lng": 36.8005,
+        "gridimg": "assets/img/homes/rosslyn-townhouse-4br.svg",
+        "listimg": "assets/img/homes/rosslyn-townhouse-4br.svg",
+        "authorimg": "assets/img/avatars/peter-njoroge.svg",
+        "authorname": "Peter Njoroge",
+        "monthlyprice": 3200,
+        "kes": 412800,
+        "beds": 4,
+        "bathrooms": 3,
+        "area": 2700,
+        "furnished": "Fully furnished",
+        "leaseMin": 12,
+        "available": "1 Aug 2026",
+        "compound": true,
+        "parking": 2,
+        "security": "Gated compound, 24/7 patrol",
+        "text": "Walking distance to Rosslyn Academy — the reason most families take this compound. Twelve townhouses around a shared lawn, with a generator on the compound and a school run measured in minutes on foot.",
+        "amenities": [
+            "Backup generator",
+            "Borehole water",
+            "Shared lawn",
+            "Playground",
+            "Fibre internet",
+            "Staff quarters (DSQ)"
+        ],
+        "nearby": [
+            {
+                "type": "school",
+                "name": "Rosslyn Academy",
+                "km": 0.6,
+                "mins": 2
+            },
+            {
+                "type": "school",
+                "name": "International School of Kenya",
+                "km": 2.5,
+                "mins": 9
+            },
+            {
+                "type": "work",
+                "name": "UN Complex (UNON)",
+                "km": 3.1,
+                "mins": 10
+            },
+            {
+                "type": "shopping",
+                "name": "Village Market",
+                "km": 2.9,
+                "mins": 10
+            },
+            {
+                "type": "leisure",
+                "name": "Karura Forest",
+                "km": 3.4,
+                "mins": 11
+            }
+        ],
+        "star": true,
+        "featured": false
+    },
+    {
+        "id": 10,
+        "slug": "nyari-compound-home-4br",
+        "title": "4-Bedroom Home, Nyari Estate",
+        "neighbourhood": "Nyari",
+        "propertyType": "House",
+        "lat": -1.2295,
+        "lng": 36.7975,
+        "gridimg": "assets/img/homes/nyari-compound-home-4br.svg",
+        "listimg": "assets/img/homes/nyari-compound-home-4br.svg",
+        "authorimg": "assets/img/avatars/grace-mutiso.svg",
+        "authorname": "Grace Mutiso",
+        "monthlyprice": 3900,
+        "kes": 503100,
+        "beds": 4,
+        "bathrooms": 3,
+        "area": 3000,
+        "furnished": "Semi-furnished",
+        "leaseMin": 12,
+        "available": "15 Aug 2026",
+        "compound": true,
+        "parking": 2,
+        "security": "Estate perimeter, manned gate, patrols",
+        "text": "Inside Nyari's controlled estate, where the security is handled at the estate boundary rather than at your gate. Popular with families who want children able to cycle to a friend's house.",
+        "amenities": [
+            "Backup generator",
+            "Borehole water",
+            "Staff quarters (DSQ)",
+            "Fibre internet",
+            "Private garden",
+            "Pet friendly"
+        ],
+        "nearby": [
+            {
+                "type": "school",
+                "name": "International School of Kenya",
+                "km": 2.2,
+                "mins": 8
+            },
+            {
+                "type": "work",
+                "name": "UN Complex (UNON)",
+                "km": 3,
+                "mins": 10
+            },
+            {
+                "type": "shopping",
+                "name": "Village Market",
+                "km": 2.6,
+                "mins": 9
+            },
+            {
+                "type": "leisure",
+                "name": "Karura Forest",
+                "km": 2,
+                "mins": 7
+            },
+            {
+                "type": "health",
+                "name": "Gertrude's Children's Hospital",
+                "km": 4.4,
+                "mins": 14
+            }
+        ],
+        "star": false,
+        "featured": false
+    },
+    {
+        "id": 11,
+        "slug": "spring-valley-garden-apartment-3br",
+        "title": "3-Bedroom Garden Apartment",
+        "neighbourhood": "Spring Valley",
+        "propertyType": "Apartment",
+        "lat": -1.2545,
+        "lng": 36.7862,
+        "gridimg": "assets/img/homes/spring-valley-garden-apartment-3br.svg",
+        "listimg": "assets/img/homes/spring-valley-garden-apartment-3br.svg",
+        "authorimg": "assets/img/avatars/wanjiru-kamau.svg",
+        "authorname": "Wanjiru Kamau",
+        "monthlyprice": 2200,
+        "kes": 283800,
         "beds": 3,
         "bathrooms": 2,
-        "area": 2499,
-        "star":true,
-        "sale":true,
-        "pending":false,
-        "rental":false,
-        "recent":false
+        "area": 1800,
+        "furnished": "Fully furnished",
+        "leaseMin": 6,
+        "available": "Immediately",
+        "compound": true,
+        "parking": 1,
+        "security": "Gated, 24/7 guard, CCTV",
+        "text": "A ground-floor apartment with its own walled garden — rare at this price, and the reason it suits families with a toddler and a dog. Six-month leases accepted.",
+        "amenities": [
+            "Backup generator",
+            "Borehole water",
+            "Private garden",
+            "Fibre internet",
+            "Pet friendly",
+            "Secure parking"
+        ],
+        "nearby": [
+            {
+                "type": "shopping",
+                "name": "Sarit Centre",
+                "km": 2.4,
+                "mins": 8
+            },
+            {
+                "type": "school",
+                "name": "International School of Kenya",
+                "km": 3.6,
+                "mins": 12
+            },
+            {
+                "type": "health",
+                "name": "Aga Khan University Hospital",
+                "km": 3.2,
+                "mins": 11
+            },
+            {
+                "type": "leisure",
+                "name": "Karura Forest",
+                "km": 1.9,
+                "mins": 7
+            },
+            {
+                "type": "work",
+                "name": "Westlands offices",
+                "km": 2.8,
+                "mins": 10
+            }
+        ],
+        "star": false,
+        "featured": false
+    },
+    {
+        "id": 12,
+        "slug": "loresho-family-house-4br",
+        "title": "4-Bedroom Family House, Loresho",
+        "neighbourhood": "Loresho",
+        "propertyType": "House",
+        "lat": -1.2555,
+        "lng": 36.7595,
+        "gridimg": "assets/img/homes/loresho-family-house-4br.svg",
+        "listimg": "assets/img/homes/loresho-family-house-4br.svg",
+        "authorimg": "assets/img/avatars/david-ochieng.svg",
+        "authorname": "David Ochieng",
+        "monthlyprice": 2800,
+        "kes": 361200,
+        "beds": 4,
+        "bathrooms": 3,
+        "area": 2600,
+        "furnished": "Semi-furnished",
+        "leaseMin": 12,
+        "available": "1 Sep 2026",
+        "compound": false,
+        "parking": 2,
+        "security": "Manned gate, electric fence",
+        "text": "A straightforward family house on a half-acre in Loresho, with mature garden and a covered veranda. Good value per square metre if you can live with a slightly longer run to Gigiri.",
+        "amenities": [
+            "Backup generator",
+            "Borehole water",
+            "Staff quarters (DSQ)",
+            "Fibre internet",
+            "Private garden",
+            "Pet friendly"
+        ],
+        "nearby": [
+            {
+                "type": "school",
+                "name": "International School of Kenya",
+                "km": 4.2,
+                "mins": 14
+            },
+            {
+                "type": "shopping",
+                "name": "Sarit Centre",
+                "km": 4.8,
+                "mins": 16
+            },
+            {
+                "type": "work",
+                "name": "UN Complex (UNON)",
+                "km": 5.4,
+                "mins": 18
+            },
+            {
+                "type": "leisure",
+                "name": "Karura Forest",
+                "km": 3.7,
+                "mins": 12
+            },
+            {
+                "type": "health",
+                "name": "Aga Khan University Hospital",
+                "km": 5.6,
+                "mins": 18
+            }
+        ],
+        "star": false,
+        "featured": false
     }
 ]

@@ -12,6 +12,7 @@ import 'leaflet/dist/leaflet.css';
 import './assets/fonts/flaticon/flaticon.css';
 import './assets/fonts/font-awesome/css/all.min.css';
 import './assets/css/style.css';
+import './assets/css/brand.css';
 
 createRoot(document.getElementById('acres')).render(
   <React.StrictMode>

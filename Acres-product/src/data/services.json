@@ -1,38 +1,38 @@
 [
     {
         "id": 1,
-        "icon": "sold",
-        "title": "Real Estate Services",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "icon": "house",
+        "title": "Home search",
+        "text": "We take your brief, shortlist four or five homes that genuinely fit, and film each one so you can decide before you fly."
     },
     {
         "id": 2,
-        "icon": "company",
-        "title": "Business Services",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "icon": "clipboard",
+        "title": "School placement",
+        "text": "Which school has places in your child's year group — and which has a two-year list. We handle applications and the run to open days."
     },
     {
         "id": 3,
-        "icon": "clipboard",
-        "title": "Tax Services",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "icon": "sold",
+        "title": "Lease negotiation",
+        "text": "Leases here are negotiable, and often written in the landlord's favour. We negotiate in your name and read every clause before you sign."
     },
     {
         "id": 4,
-        "icon": "checklist",
-        "title": "Mortgage Calculation",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "icon": "sales-agent",
+        "title": "Settling in",
+        "text": "Power, water, fibre, gas and the first grocery run. We connect the utilities before your container clears customs."
     },
     {
         "id": 5,
-        "icon": "sales-agent",
-        "title": "Consultation Services",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "icon": "company",
+        "title": "Visas and work permits",
+        "text": "Class D permits, dependant passes and the paperwork that follows. We work alongside your organisation's HR team."
     },
     {
         "id": 6,
-        "icon": "user",
-        "title": "Services for Individuals",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "icon": "telephone",
+        "title": "Staff and security",
+        "text": "Vetted house staff, drivers and guards, with references we have actually called. Advice on what is normal to pay."
     }
 ]

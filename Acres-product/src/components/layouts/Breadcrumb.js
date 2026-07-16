@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Breadcrumb extends Component {
     render() {
         return (
-            <div className="subheader bg-cover bg-center dark-overlay" style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "/assets/img/subheader.jpg )" }}>
+            <div className="subheader bg-cover bg-center dark-overlay" style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "/assets/img/scenes/counter.svg)" }}>
                 <div className="container">
                     <div className="subheader-inner">
                         <h1 className="text-white">{this.props.breadcrumb.pagename}</h1>

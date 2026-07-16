@@ -1,86 +1,77 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Dropdown, NavLink } from 'react-bootstrap';
-import App from './App';
+import Logo from './Logo';
 
 class Footer extends Component {
     render() {
         return (
             <footer className="acr-footer footer-2">
-                {/* Footer Top Start */}
-                <App/>
-                {/* Footer Top End */}
-                {/* Footer Middle Start */}
                 <div className="footer-middle">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-5 col-sm-12 footer-widget">
-                                <div className="footer-logo"> <img src={process.env.PUBLIC_URL + "/assets/img/logo.png"} alt="acres" /> </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
-                                <Dropdown className="acr-language-selector">
-                                    <Dropdown.Toggle as={NavLink} className="dropdownicon">
-                                        <img src={process.env.PUBLIC_URL + "/assets/img/flags/united-states.png"} alt="flag" />
-                                        <span>English</span>
-                                    </Dropdown.Toggle>
-                                    <Dropdown.Menu className="dropdown-menu">
-                                        <ul>
-                                            <li> <Link to="#"><img src={process.env.PUBLIC_URL + "/assets/img/flags/germany.png"} alt="flag" /> German</Link> </li>
-                                            <li> <Link to="#"><img src={process.env.PUBLIC_URL + "/assets/img/flags/russia.png"} alt="flag" /> Russian</Link> </li>
-                                            <li> <Link to="#"><img src={process.env.PUBLIC_URL + "/assets/img/flags/united-states.png"} alt="flag" />English</Link> </li>
-                                            <li> <Link to="#"><img src={process.env.PUBLIC_URL + "/assets/img/flags/spain.png"} alt="flag" /> Spanish</Link> </li>
-                                        </ul>
-                                    </Dropdown.Menu>
-                                </Dropdown>
+                                <div className="footer-logo">
+                                    <Logo sub={false} />
+                                </div>
+                                <p>
+                                    Homes in Nairobi for families arriving from somewhere else.
+                                    Near the UN, the embassies and the international schools —
+                                    with the power, water and security already checked.
+                                </p>
+                                <ul className="social-media">
+                                    <li> <Link to="#"> <i className="fab fa-linkedin-in" /> </Link> </li>
+                                    <li> <Link to="#"> <i className="fab fa-instagram" /> </Link> </li>
+                                    <li> <Link to="#"> <i className="fab fa-facebook-f" /> </Link> </li>
+                                    <li> <Link to="#"> <i className="fab fa-whatsapp" /> </Link> </li>
+                                </ul>
                             </div>
                             <div className="col-lg-2 offset-lg-1 col-sm-4 footer-widget">
-                                <h5 className="widget-title">Menu</h5>
+                                <h5 className="widget-title">Find a home</h5>
                                 <ul>
-                                    <li> <Link to="/listing-map">Find Home</Link> </li>
-                                    <li> <Link to="/submit-listing">Add Listing</Link> </li>
-                                    <li> <Link to="/listing-map">Listings</Link> </li>
-                                    <li> <Link to="/blog-grid">Blog</Link> </li>
+                                    <li> <Link to="/search">Search the map</Link> </li>
+                                    <li> <Link to="/search?neighbourhood=Gigiri">Gigiri</Link> </li>
+                                    <li> <Link to="/search?neighbourhood=Runda">Runda</Link> </li>
+                                    <li> <Link to="/search?neighbourhood=Karen">Karen</Link> </li>
+                                    <li> <Link to="/shortlist">Your shortlist</Link> </li>
                                 </ul>
                             </div>
                             <div className="col-lg-2 col-sm-4 footer-widget">
-                                <h5 className="widget-title">Information</h5>
+                                <h5 className="widget-title">Support</h5>
                                 <ul>
-                                    <li> <Link to="/about">About Us</Link> </li>
-                                    <li> <Link to="/contact">Contact Us</Link> </li>
-                                    <li> <Link to="/services">Services</Link> </li>
+                                    <li> <Link to="/relocation">Relocation</Link> </li>
+                                    <li> <Link to="/consultants">Consultants</Link> </li>
                                     <li> <Link to="/faq">FAQ</Link> </li>
+                                    <li> <Link to="/contact">Contact</Link> </li>
                                 </ul>
                             </div>
                             <div className="col-lg-2 col-sm-4 footer-widget">
-                                <h5 className="widget-title">Legal</h5>
+                                <h5 className="widget-title">Office</h5>
                                 <ul>
-                                    <li> <Link to="/legal">Privacy Policy</Link> </li>
-                                    <li> <Link to="/legal">Refund Policy</Link> </li>
-                                    <li> <Link to="/legal">Cookie Policy</Link> </li>
-                                    <li> <Link to="/legal">Legal Terms</Link> </li>
+                                    <li>Village Market</li>
+                                    <li>Limuru Road, Gigiri</li>
+                                    <li>Nairobi, Kenya</li>
+                                    <li> <Link to="tel:+254200000000">+254 20 000 0000</Link> </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* Footer Middle End */}
-                {/* Footer Bottom Start */}
                 <div className="footer-bottom">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-7">
-                                <p className="m-0">© Copyright 2020 - <Link to="#">AndroThemes</Link> All Rights Reserved.</p>
+                                <p className="m-0">© {new Date().getFullYear()} Karibu Homes. All rights reserved.</p>
                             </div>
                             <div className="col-lg-5">
                                 <ul>
-                                    <li> <Link to="/listing-map">Find a Home</Link> </li>
-                                    <li> <Link to="/submit-listing">Add Listing</Link> </li>
-                                    <li> <Link to="/agency-archive">View Agencies</Link> </li>
+                                    <li> <Link to="/about">About</Link> </li>
+                                    <li> <Link to="/faq">FAQ</Link> </li>
+                                    <li> <Link to="/contact">Contact</Link> </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* Footer Bottom End */}
             </footer>
         );
     }

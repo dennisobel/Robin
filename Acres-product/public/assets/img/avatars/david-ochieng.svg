@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="David Ochieng">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#1f8f8f"/><stop offset="1" stop-color="#0d3b46"/>
+  </linearGradient></defs>
+  <rect width="300" height="300" fill="url(#g)"/>
+  <text x="150" y="150" font-family="Poppins, Segoe UI, sans-serif" font-size="112" font-weight="700"
+        fill="#fff" opacity="0.92" text-anchor="middle" dominant-baseline="central">DO</text>
+</svg>

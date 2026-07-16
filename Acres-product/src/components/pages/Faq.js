@@ -8,8 +8,8 @@ class Faq extends Component {
     render() {
         return (
             <Fragment>
-                <title>Acres - Real Estate React Template | FAQ's</title>
-                <meta name="description" content="#" />
+                <title>Questions expats ask about renting in Nairobi — Karibu</title>
+                <meta name="description" content="Deposits, generators, boreholes, school waiting lists, lease currency and six-month leases — answered plainly." />
                 <Header/>
                 <Breadcrumb breadcrumb={{pagename:"FAQ's"}} />
                 <Content/>

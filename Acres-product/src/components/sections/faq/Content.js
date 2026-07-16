@@ -1,249 +1,67 @@
 import React, { Component } from 'react';
-import { Tab, Nav, Accordion, Card, NavLink } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Accordion, Card, NavLink } from 'react-bootstrap';
 import Accordiontoggle from '../../layouts/Accordiontoggle';
-import Sidebar from '../../layouts/Blogsidebar';
-import Formbox from '../../layouts/Formbox';
+import faq from '../../../data/faq.json';
 
 class Content extends Component {
     render() {
         return (
             <div className="section">
                 <div className="container">
+                    <div className="section-title-wrap section-header">
+                        <h5 className="custom-primary">Before you ask</h5>
+                        <h2 className="title">The questions every family asks</h2>
+                        <p>
+                            Ten things we end up explaining on almost every first call. If yours
+                            isn't here, ask a consultant — we answer honestly, including when the
+                            answer is "don't take that house".
+                        </p>
+                    </div>
+
                     <div className="row">
                         <div className="col-lg-8">
-                            <Tab.Container defaultActiveKey="general">
-                                <Nav variant="tabs" className="nav nav-tabs">
-                                    <Nav.Item>
-                                        <Nav.Link eventKey="general">General</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link eventKey="listings">Listings</Nav.Link>
-                                    </Nav.Item>
-                                </Nav>
-                                <Tab.Content>
-                                    <Tab.Pane eventKey="general">
-                                        <Accordion defaultActiveKey="0" className="with-gap">
-                                            <Card>
-                                                <Accordion.Collapse eventKey="0" className="collapseparent">
-                                                    <Card.Body>
-                                                        <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                        skateboard dolor brunch. Square Scacco Diamond Ring truck quinoa
-                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                                        tempor,
-                                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                                        anderson cred nesciunt sapiente ea proident.
-                                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                                                        heard of them accusamus labore sustainable VHS.
-                                        </p>
-                                                        <ul className="acr-list mb-0">
-                                                            <li> Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. </li>
-                                                            <li> Many desktop publishing packages and web page editors now use Lorem
-                                                Ipsum </li>
-                                                            <li> There are many variations of passages of Lorem Ipsum </li>
-                                                            <li> Internet tend to repeat predefined chunks as necessary </li>
-                                                            <li> Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                            </li>
-                                                        </ul>
-                                                    </Card.Body>
-                                                </Accordion.Collapse>
-                                                <Card.Header>
-                                                    <Accordiontoggle as={NavLink} variant="link" eventKey="0">
-                                                        How can I start with buying a home?
+                            <Accordion defaultActiveKey="0" className="with-gap">
+                                {faq.map((item, i) => (
+                                    <Card key={item.id}>
+                                        <Card.Header>
+                                            <Accordiontoggle as={NavLink} variant="link" eventKey={String(i)}>
+                                                {item.q}
                                             </Accordiontoggle>
-                                                </Card.Header>
-                                            </Card>
-                                            <Card>
-                                                <Accordion.Collapse eventKey="1" className="collapseparent">
-                                                    <Card.Body>
-                                                        <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                        skateboard dolor brunch. Square Scacco Diamond Ring truck quinoa
-                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                                        tempor,
-                                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                                        anderson cred nesciunt sapiente ea proident.
-                                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                                                        heard of them accusamus labore sustainable VHS.
-                                        </p>
-                                                        <ul className="acr-list mb-0">
-                                                            <li> Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. </li>
-                                                            <li> Many desktop publishing packages and web page editors now use Lorem
-                                                Ipsum </li>
-                                                            <li> There are many variations of passages of Lorem Ipsum </li>
-                                                            <li> Internet tend to repeat predefined chunks as necessary </li>
-                                                            <li> Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                            </li>
-                                                        </ul>
-                                                    </Card.Body>
-                                                </Accordion.Collapse>
-                                                <Card.Header>
-                                                    <Accordiontoggle as={NavLink} variant="link" eventKey="1">
-                                                        Is the service free?
-                                            </Accordiontoggle>
-                                                </Card.Header>
-                                            </Card>
-                                            <Card>
-                                                <Accordion.Collapse eventKey="2" className="collapseparent">
-                                                    <Card.Body>
-                                                        <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                        skateboard dolor brunch. Square Scacco Diamond Ring truck quinoa
-                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                                        tempor,
-                                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                                        anderson cred nesciunt sapiente ea proident.
-                                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                                                        heard of them accusamus labore sustainable VHS.
-                                        </p>
-                                                        <ul className="acr-list mb-0">
-                                                            <li> Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. </li>
-                                                            <li> Many desktop publishing packages and web page editors now use Lorem
-                                                Ipsum </li>
-                                                            <li> There are many variations of passages of Lorem Ipsum </li>
-                                                            <li> Internet tend to repeat predefined chunks as necessary </li>
-                                                            <li> Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                            </li>
-                                                        </ul>
-                                                    </Card.Body>
-                                                </Accordion.Collapse>
-                                                <Card.Header>
-                                                    <Accordiontoggle as={NavLink} variant="link" eventKey="2">
-                                                        How many agents can I have at once?
-                                            </Accordiontoggle>
-                                                </Card.Header>
-                                            </Card>
-                                        </Accordion>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="listings">
-                                        <Accordion defaultActiveKey="10" className="with-gap">
-                                            <Card>
-                                                <Accordion.Collapse eventKey="10" className="collapseparent">
-                                                    <Card.Body>
-                                                        <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                        skateboard dolor brunch. Square Scacco Diamond Ring truck quinoa
-                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                                        tempor,
-                                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                                        anderson cred nesciunt sapiente ea proident.
-                                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                                                        heard of them accusamus labore sustainable VHS.
-                                        </p>
-                                                        <ul className="acr-list mb-0">
-                                                            <li> Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. </li>
-                                                            <li> Many desktop publishing packages and web page editors now use Lorem
-                                                Ipsum </li>
-                                                            <li> There are many variations of passages of Lorem Ipsum </li>
-                                                            <li> Internet tend to repeat predefined chunks as necessary </li>
-                                                            <li> Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                            </li>
-                                                        </ul>
-                                                    </Card.Body>
-                                                </Accordion.Collapse>
-                                                <Card.Header>
-                                                    <Accordiontoggle as={NavLink} variant="link" eventKey="10">
-                                                        How can I submit my product?
-                                            </Accordiontoggle>
-                                                </Card.Header>
-                                            </Card>
-                                            <Card>
-                                                <Accordion.Collapse eventKey="11" className="collapseparent">
-                                                    <Card.Body>
-                                                        <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                        skateboard dolor brunch. Square Scacco Diamond Ring truck quinoa
-                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                                        tempor,
-                                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                                        anderson cred nesciunt sapiente ea proident.
-                                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                                                        heard of them accusamus labore sustainable VHS.
-                                        </p>
-                                                        <ul className="acr-list mb-0">
-                                                            <li> Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. </li>
-                                                            <li> Many desktop publishing packages and web page editors now use Lorem
-                                                Ipsum </li>
-                                                            <li> There are many variations of passages of Lorem Ipsum </li>
-                                                            <li> Internet tend to repeat predefined chunks as necessary </li>
-                                                            <li> Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                            </li>
-                                                        </ul>
-                                                    </Card.Body>
-                                                </Accordion.Collapse>
-                                                <Card.Header>
-                                                    <Accordiontoggle as={NavLink} variant="link" eventKey="11">
-                                                        For how long does my product stay posted?
-                                            </Accordiontoggle>
-                                                </Card.Header>
-                                            </Card>
-                                            <Card>
-                                                <Accordion.Collapse eventKey="12" className="collapseparent">
-                                                    <Card.Body>
-                                                        <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                        skateboard dolor brunch. Square Scacco Diamond Ring truck quinoa
-                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                                        tempor,
-                                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                                        anderson cred nesciunt sapiente ea proident.
-                                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                                                        heard of them accusamus labore sustainable VHS.
-                                        </p>
-                                                        <ul className="acr-list mb-0">
-                                                            <li> Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. </li>
-                                                            <li> Many desktop publishing packages and web page editors now use Lorem
-                                                Ipsum </li>
-                                                            <li> There are many variations of passages of Lorem Ipsum </li>
-                                                            <li> Internet tend to repeat predefined chunks as necessary </li>
-                                                            <li> Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                            </li>
-                                                        </ul>
-                                                    </Card.Body>
-                                                </Accordion.Collapse>
-                                                <Card.Header>
-                                                    <Accordiontoggle as={NavLink} variant="link" eventKey="12">
-                                                        Can I submit products for free?
-                                            </Accordiontoggle>
-                                                </Card.Header>
-                                            </Card>
-                                        </Accordion>
-                                    </Tab.Pane>
-                                </Tab.Content>
-                            </Tab.Container>
-                            {/* Contact Form Start */}
-                            <div className="section pb-0">
-                                <div className="section-title-wrap section-header">
-                                    <h5 className="custom-primary">Contact Us</h5>
-                                    <h2 className="title">Still Got Questions?</h2>
-                                    <p className="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                                        </Card.Header>
+                                        <Accordion.Collapse eventKey={String(i)} className="collapseparent">
+                                            <Card.Body>
+                                                <p className="mb-0">{item.a}</p>
+                                            </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Card>
+                                ))}
+                            </Accordion>
+                        </div>
+
+                        <div className="col-lg-4">
+                            <div className="sidebar sidebar-right">
+                                <div className="sidebar-widget">
+                                    <h5>Still deciding?</h5>
+                                    <p className="text-muted">
+                                        Send us your posting dates and the ages of your children.
+                                        We'll come back with the two or three neighbourhoods that
+                                        actually fit, and why.
+                                    </p>
+                                    <Link to="/contact" className="btn-custom primary btn-block">
+                                        Ask a consultant
+                                    </Link>
                                 </div>
-                                <div className="comment-form">
-                                    <Formbox />
+                                <div className="sidebar-widget">
+                                    <h5>Start on the map</h5>
+                                    <p className="text-muted">
+                                        Every home is filtered by school, budget and lease length.
+                                    </p>
+                                    <Link to="/search" className="btn-custom secondary btn-block">
+                                        Find a home
+                                    </Link>
                                 </div>
                             </div>
-                            {/* Contact Form End */}
-                        </div>
-                        <div className="col-lg-4">
-                            <Sidebar />
                         </div>
                     </div>
                 </div>

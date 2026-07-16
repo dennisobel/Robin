@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from 'react';
-import Header from '../layouts/Headerfive';
+import Header from '../layouts/Header';
 import Content from '../sections/register/Content';
 
 class Register extends Component {
     render() {
         return (
             <Fragment>
-                <title>Acres - Real Estate React Template | Register</title>
-                <meta name="description" content="#" />
+                <title>Create an account — Karibu</title>
+                <meta name="description" content="Save homes, share your shortlist and get new Nairobi listings that match your brief." />
                 <Header/>
                 <Content/>
             </Fragment>

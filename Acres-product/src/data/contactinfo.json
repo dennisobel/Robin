@@ -2,25 +2,25 @@
     {
         "id": 1,
         "icon": "telephone",
-        "title": "Reach Out",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "btntext": "Call Us",
-        "btnurl": "tel:+123456789"
+        "title": "Call us",
+        "text": "We answer between 8am and 7pm East Africa Time (GMT+3), and we're used to calls from other time zones.",
+        "btntext": "+254 20 000 0000",
+        "btnurl": "tel:+254200000000"
     },
     {
         "id": 2,
         "icon": "location",
-        "title": "Find Us",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "btntext": "Get Directions",
+        "title": "Visit the office",
+        "text": "Village Market, Limuru Road, Gigiri — five minutes from the UN complex. Parking at gate B.",
+        "btntext": "Get directions",
         "btnurl": "#"
     },
     {
         "id": 3,
         "icon": "speech-bubble",
-        "title": "Get Support",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "btntext": "Start Chat",
+        "title": "WhatsApp a consultant",
+        "text": "The fastest way to reach us if you're still abroad. Send your dates and we'll reply with a shortlist.",
+        "btntext": "Start a chat",
         "btnurl": "#"
     }
 ]

@@ -20,10 +20,15 @@ class Select2 extends Component {
         const firstLabel = typeof data[0] === 'object' ? data[0]?.text : data[0];
         const showPlaceholder = placeholder && firstLabel !== placeholder;
 
+        // Callers may drive this as a controlled select (value + onChange).
+        // Setting defaultValue as well would make React complain that the
+        // element is switching between controlled and uncontrolled.
+        const controlled = rest.value !== undefined;
+
         return (
             <select
                 className={`acr-select2 ${className}`.trim()}
-                defaultValue={showPlaceholder ? '' : undefined}
+                defaultValue={!controlled && showPlaceholder ? '' : undefined}
                 {...rest}
             >
                 {showPlaceholder && <option value="" disabled>{placeholder}</option>}

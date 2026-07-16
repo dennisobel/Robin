@@ -8,10 +8,10 @@ class Contact extends Component {
     render() {
         return (
             <Fragment>
-                <title>Acres - Real Estate React Template | Contact Us</title>
-                <meta name="description" content="#" />
+                <title>Contact Karibu — Gigiri, Nairobi</title>
+                <meta name="description" content="Send us your posting dates and what the family needs. We reply with a shortlist within two working days." />
                 <Header/>
-                <Breadcrumb breadcrumb={{pagename:'Contact Us'}} />
+                <Breadcrumb breadcrumb={{ pagename: 'Contact' }} />
                 <Content/>
                 <Footer/>
             </Fragment>

@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "q": "How far ahead should we start looking?",
+        "a": "Three months before you land is ideal, six weeks is workable. The July and January posting waves are competitive — the best compounds in Gigiri and Runda are usually taken sixty days out, and school places go before the houses do."
+    },
+    {
+        "id": 2,
+        "q": "Do we really need a generator and a borehole?",
+        "a": "Yes, and we don't list homes without them. Nairobi has scheduled power cuts and unreliable mains water in most of the leafy suburbs. A house without backup will cost you a week of frustration in your first month. We test both on the walkthrough rather than take the landlord's word."
+    },
+    {
+        "id": 3,
+        "q": "Are leases quoted in dollars or shillings?",
+        "a": "Both. Expat-market landlords typically quote USD and accept shillings at the day's rate. We show USD with the shilling equivalent on every listing, and we make sure the lease states which currency governs — that clause matters when the rate moves."
+    },
+    {
+        "id": 4,
+        "q": "What is a normal deposit?",
+        "a": "Two months' rent plus one month in advance is standard, and it is negotiable. Ask us before you agree to more. We hold landlords to a written inventory at check-in, which is the single biggest factor in getting the deposit back at the end."
+    },
+    {
+        "id": 5,
+        "q": "Can we get a six-month lease?",
+        "a": "In apartments, usually — Westlands, Kilimani and Spring Valley have serviced stock that accepts six months. For houses and compounds, twelve months is the floor and twenty-four is common. Filter by 'Shortest lease' on the map to see only what fits your posting."
+    },
+    {
+        "id": 6,
+        "q": "Which international school should we choose?",
+        "a": "It usually decides the neighbourhood, so start here. ISK and the German and French schools sit in the Gigiri belt; Rosslyn Academy in Rosslyn; Brookhouse and Hillcrest in Karen; Braeburn in Lavington. We'll tell you which have places in your child's year group before you commit to an area."
+    },
+    {
+        "id": 7,
+        "q": "What security is standard?",
+        "a": "A manned gate, an electric fence and an alarm linked to a rapid-response company — on every home we list. Compounds add a perimeter and patrols, which is why families with younger children often prefer them: the children can move between houses freely."
+    },
+    {
+        "id": 8,
+        "q": "Can we bring pets?",
+        "a": "Often, but it narrows the list, so tell us at the brief rather than at the lease. Houses with private gardens in Karen, Runda and Gigiri are the easiest. We mark pet-friendly homes on the map and handle the landlord conversation for you."
+    },
+    {
+        "id": 9,
+        "q": "What are staff quarters, and do we need them?",
+        "a": "Most houses here include a detached staff unit — a DSQ. You are under no obligation to use it, and plenty of families don't. If you do employ a housekeeper, nanny or gardener, we can help with vetted candidates and advise on fair local rates."
+    },
+    {
+        "id": 10,
+        "q": "Who pays your fee?",
+        "a": "The landlord pays the letting commission, as is standard here. Our relocation services — schools, permits, settling in — are quoted separately and are usually billed to your organisation, not to you."
+    }
+]

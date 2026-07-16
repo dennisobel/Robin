@@ -1,29 +1,38 @@
 [
     {
         "id": 1,
-        "title": "Perfect service",
-        "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
-        "author": "John Mishlen",
-        "post": "Executive CEO at company",
-        "authorimg": "assets/img/people/1.jpg",
+        "title": "We signed before we landed",
+        "comment": "We were still in Geneva when Wanjiru sent the walkthrough videos. We picked the Runda house on a Tuesday, signed that Friday, and moved straight in from the airport. No serviced apartment, no three months in limbo.",
+        "author": "Claire Doucet",
+        "post": "UN Environment Programme",
+        "authorimg": "assets/img/avatars/claire-doucet.svg",
         "rating": 5
     },
     {
         "id": 2,
-        "title": "Competitive prices",
-        "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
-        "author": "Moe Sondi",
-        "post": "Executive CEO at company",
-        "authorimg": "assets/img/people/2.jpg",
-        "rating": 4
+        "title": "They told us not to take a house",
+        "comment": "The one we loved had a generator that hadn't run in a year and a landlord who wouldn't fix it. They told us plainly. That cost them a commission and won them our trust — and every referral we've made since.",
+        "author": "Michael Brandt",
+        "post": "German Embassy",
+        "authorimg": "assets/img/avatars/michael-brandt.svg",
+        "rating": 5
     },
     {
         "id": 3,
-        "title": "Great agents",
-        "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
-        "author": "Mandy Floss",
-        "post": "Executive CEO at company",
-        "authorimg": "assets/img/people/3.jpg",
-        "rating": 4
+        "title": "The school run decided it",
+        "comment": "We were set on Karen until Aisha showed us what the ISK run actually looks like at 7am. We moved to Rosslyn instead and our daughter walks to school. Nobody else would have talked us out of it.",
+        "author": "Sarah Whitfield",
+        "post": "International NGO",
+        "authorimg": "assets/img/avatars/sarah-whitfield.svg",
+        "rating": 5
+    },
+    {
+        "id": 4,
+        "title": "Got our full deposit back",
+        "comment": "David insisted on a written inventory with photographs at check-in. Two years later the landlord tried to bill us for the garden. The inventory settled it in one email.",
+        "author": "Tomás Herrera",
+        "post": "World Food Programme",
+        "authorimg": "assets/img/avatars/tom-s-herrera.svg",
+        "rating": 5
     }
 ]

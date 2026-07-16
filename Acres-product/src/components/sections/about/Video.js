@@ -14,17 +14,15 @@ class Video extends Component {
     }
     render() {
         return (
-            <div className="section light-bg section-img-wrapper">
-                <div className="section-imgs">
-                    <img src={process.env.PUBLIC_URL + "/assets/img/megamenu.png"} alt="img" />
-                    <img src={process.env.PUBLIC_URL + "/assets/img/megamenu2.png"} alt="img" />
-                </div>
+            <div className="section light-bg">
                 <div className="container">
                     <div className="section-title-wrap text-center">
-                        <h5 className="custom-primary">Our Ways</h5>
-                        <h2 className="title">Watch Our Agents Do Their Jobs</h2>
+                        <h5 className="custom-primary">See a home first</h5>
+                        <h2 className="title">Every house, on video, before you fly</h2>
                         <p className="subtitle">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            You shouldn't have to sign a two-year lease from a photo gallery. We
+                            walk each home with a camera — including the generator, the water tank
+                            and the road in the rain — so what you see is what you land in.
                         </p>
                         <Link to="https://www.youtube.com/watch?v=TKnufs85hXk&t=1s" className="btn-custom popup-youtube"> <i className="m-0 fas fa-play" /> </Link>
                     </div>

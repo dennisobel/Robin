@@ -1,13 +1,24 @@
 import React, { Fragment } from 'react';
-import Menu from '../layouts/Menu';
-import Mobilemenu from '../layouts/Mobilemenu';
+import Menu from './Menu';
+import Mobilemenu from './Mobilemenu';
 import HeaderComponent from '../../helper/Navigationhelper';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
+import { useShortlist } from '../../helper/shortlist';
+
+/** Shortlist count next to the header link — hooks need a function component. */
+function Shortlistlink() {
+    const count = useShortlist().length;
+    return (
+        <Link to="/shortlist" className="btn-custom-2 light-grey">
+            <i className={count ? 'fas fa-heart' : 'far fa-heart'} />
+            {count > 0 ? ` Shortlist (${count})` : ' Shortlist'}
+        </Link>
+    );
+}
 
 class Header extends HeaderComponent {
     render() {
-        const stickyheader = this.state.isTop ? 'sticky' : '';
         return (
             <Fragment>
                 {/* Aside (Mobile Navigation) */}
@@ -25,38 +36,23 @@ class Header extends HeaderComponent {
                 </aside>
                 <div className="aside-overlay aside-trigger" onClick={this.navtoggleClass} />
                 {/* Header Start */}
-                <header className={`main-header header-fw can-sticky header-1 ${stickyheader}`}>
-                    {/* Top Header Start */}
-                    <div className="top-header">
-                        <div className="top-header-inner">
-                            <ul className="social-media">
-                                <li> <Link to="#"> <i className="fab fa-facebook-f" /> </Link> </li>
-                                <li> <Link to="#"> <i className="fab fa-pinterest-p" /> </Link> </li>
-                                <li> <Link to="#"> <i className="fab fa-linkedin-in" /> </Link> </li>
-                                <li> <Link to="#"> <i className="fab fa-twitter" /> </Link> </li>
-                            </ul>
-                            <ul className="top-header-nav">
-                                <li> <Link to="/login"> Login</Link> </li>
-                                <li>or</li>
-                                <li> <Link to="/register"> Signup</Link> </li>
-                            </ul>
-                        </div>
-                    </div>
-                    {/* Top Header End */}
+                <header className="main-header header-3">
                     <nav className="navbar">
-                        {/* Menu */}
-                        <Menu />
-                        <div className="header-controls">
-                            <ul className="header-controls-inner d-none d-lg-flex">
-                                <li>
-                                    <Link to="/submit-listing" className="btn-custom primary">Submit Listing <i className="fas fa-plus" /> </Link>
-                                </li>
-                            </ul>
-                            {/* Toggler */}
-                            <div className="aside-toggler aside-trigger" onClick={this.navtoggleClass}>
-                                <span />
-                                <span />
-                                <span />
+                        <div className="container">
+                            <Menu />
+                            <div className="header-controls">
+                                <ul className="header-controls-inner d-none d-lg-flex align-items-center">
+                                    <li className="me-2"> <Shortlistlink /> </li>
+                                    <li>
+                                        <Link to="/login" className="btn-custom primary">Sign in <i className="fas fa-user" /> </Link>
+                                    </li>
+                                </ul>
+                                {/* Toggler */}
+                                <div className="aside-toggler aside-trigger" onClick={this.navtoggleClass}>
+                                    <span />
+                                    <span />
+                                    <span />
+                                </div>
                             </div>
                         </div>
                     </nav>

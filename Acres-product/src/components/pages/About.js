@@ -8,10 +8,10 @@ class About extends Component {
     render() {
         return (
             <Fragment>
-                <title>Acres - Real Estate React Template | About Us</title>
-                <meta name="description" content="#" />
+                <title>About Karibu — why we only work with people arriving in Nairobi</title>
+                <meta name="description" content="Karibu has settled 400+ diplomatic, UN and NGO families in Nairobi since 2019. Every home visited in person; the landlord pays our commission." />
                 <Header/>
-                <Breadcrumb breadcrumb={{pagename:'About Us'}} />
+                <Breadcrumb breadcrumb={{ pagename: 'About us' }} />
                 <Content/>
                 <Footer/>
             </Fragment>

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Gigiri",
+        "img": "assets/img/hoods/gigiri.svg",
+        "icon": "company",
+        "tagline": "Walk to the UN",
+        "text": "The diplomatic quarter. Minutes from the UN complex, the US Embassy and the International School of Kenya — most staff here never drive to work.",
+        "commute": "5 min to UNON",
+        "from": 3400
+    },
+    {
+        "id": 2,
+        "name": "Runda",
+        "img": "assets/img/hoods/runda.svg",
+        "icon": "house",
+        "tagline": "Compounds and gardens",
+        "text": "Managed compounds with shared pools and playgrounds, built for families on multi-year postings. The default first-posting answer.",
+        "commute": "12 min to UNON",
+        "from": 3000
+    },
+    {
+        "id": 3,
+        "name": "Karen",
+        "img": "assets/img/hoods/karen.svg",
+        "icon": "house",
+        "tagline": "Space, at a distance",
+        "text": "Acre plots, horses and forest air. You trade the commute for room to breathe — and for Brookhouse and Hillcrest on your doorstep.",
+        "commute": "40 min to UNON",
+        "from": 2600
+    },
+    {
+        "id": 4,
+        "name": "Westlands",
+        "img": "assets/img/hoods/westlands.svg",
+        "icon": "building",
+        "tagline": "Serviced and central",
+        "text": "Serviced apartments above the malls and offices. Six-month leases, no garden to manage — the short-assignment choice.",
+        "commute": "20 min to UNON",
+        "from": 1200
+    },
+    {
+        "id": 5,
+        "name": "Lavington",
+        "img": "assets/img/hoods/lavington.svg",
+        "icon": "house",
+        "tagline": "The middle ground",
+        "text": "Leafy, walkable and central, with townhouses that suit families who want the city rather than a compound.",
+        "commute": "25 min to UNON",
+        "from": 1900
+    },
+    {
+        "id": 6,
+        "name": "Kilimani",
+        "img": "assets/img/hoods/kilimani.svg",
+        "icon": "building",
+        "tagline": "Closest to the office",
+        "text": "Apartments with pools and gyms, walking distance to Yaya Centre and the shortest run to Upper Hill and the city centre.",
+        "commute": "30 min to UNON",
+        "from": 1400
+    }
+]

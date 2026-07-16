@@ -1,85 +1,68 @@
 {
-    "locationlist":[
-        "Any Location",
-        "California, CA",
-        "Lawndale, CA",
-        "Stroudsburg, PA",
-        "West Roxbury, MA",
-        "Ponte Vedra Beach, FL",
-        "Fort Worth, TX",
-        "Willingboro, NJ"
+    "neighbourhoodlist": [
+        "Any neighbourhood",
+        "Gigiri",
+        "Runda",
+        "Rosslyn",
+        "Nyari",
+        "Muthaiga",
+        "Kitisuru",
+        "Spring Valley",
+        "Loresho",
+        "Lavington",
+        "Westlands",
+        "Kilimani",
+        "Karen"
     ],
-    "statuslist":[
-        "Any Status",
-        "For Rent",
-        "Featured",
-        "For Sale",
-        "Leased",
-        "New Addition",
-        "Sold",
-        "Rental",
-        "Reduced",
-        "Special Offer"
+    "budgetlist": [
+        "Any budget",
+        "Under $2,000/mo",
+        "$2,000 - $3,000/mo",
+        "$3,000 - $4,500/mo",
+        "$4,500 - $6,000/mo",
+        "$6,000+/mo"
     ],
-    "pricerangelist":[
-        "Any Range",
-        "$60k - $80k",
-        "$80k - $100k",
-        "$100k - $120k",
-        "$120k - $140k",
-        "$140k - $160k",
-        "$160k - $180k",
-        "$180k - $200k"
-    ],
-    "bedslist":[
-        "Any amount",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5+"
-    ],
-    "bathroomslist":[
-        "Any amount",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5+"
-    ],
-    "typelist":[
-        "Any Type",
-        "House",
-        "Apartment",
-        "Condo",
-        "Townhome",
-        "Villa",
-        "Duplex"
-    ],
-    "diameterlist":[
-        "Any Range",
-        "Within 2 miles",
-        "Within 4 miles",
-        "Within 6 miles",
-        "Within 8 miles",
-        "Within 10 miles",
-        "Within 22 miles"
-    ],
-    "floorlist":[
-        "Any floor",
-        "1st",
-        "2nd",
-        "3rd",
-        "4th",
-        "5th"
-    ],
-    "sortbylist":[
+    "bedslist": [
         "Any",
-        "Top Selling",
-        "Most Popular",
-        "Price: High - Low",
-        "Price: Low - High",
-        "Number of baths",
-        "Number of beds"
+        "1+ bedrooms",
+        "2+ bedrooms",
+        "3+ bedrooms",
+        "4+ bedrooms",
+        "5+ bedrooms"
+    ],
+    "furnishinglist": [
+        "Any furnishing",
+        "Fully furnished",
+        "Semi-furnished",
+        "Unfurnished"
+    ],
+    "typelist": [
+        "Any type",
+        "Villa",
+        "House",
+        "Townhouse",
+        "Apartment"
+    ],
+    "schoollist": [
+        "Any school",
+        "International School of Kenya",
+        "Rosslyn Academy",
+        "Brookhouse School",
+        "German School Nairobi",
+        "Braeburn Garden Estate School",
+        "Hillcrest International School"
+    ],
+    "leaselist": [
+        "Any lease",
+        "6 months",
+        "12 months",
+        "24 months"
+    ],
+    "sortbylist": [
+        "Most relevant",
+        "Price: low to high",
+        "Price: high to low",
+        "Most bedrooms",
+        "Available soonest"
     ]
 }

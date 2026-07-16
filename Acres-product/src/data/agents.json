@@ -1,34 +1,73 @@
 [
     {
         "id": 1,
-        "img": "assets/img/agents/1.jpg",
-        "name": "Randy Blue",
-        "post": "Expert at Company",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "img": "assets/img/avatars/wanjiru-kamau.svg",
+        "name": "Wanjiru Kamau",
+        "post": "Head of home search",
+        "areas": [
+            "Gigiri",
+            "Runda",
+            "Nyari"
+        ],
+        "languages": [
+            "English",
+            "Kiswahili",
+            "French"
+        ],
+        "text": "Six years placing UN and embassy families in the Gigiri belt. Knows which compounds have a working generator and which have one on paper.",
         "star": true
     },
     {
         "id": 2,
-        "img": "assets/img/agents/2.jpg",
-        "name": "Rinda Flow",
-        "post": "Expert at Company",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-        "star": false
+        "img": "assets/img/avatars/david-ochieng.svg",
+        "name": "David Ochieng",
+        "post": "Leases and negotiation",
+        "areas": [
+            "Westlands",
+            "Kilimani",
+            "Lavington"
+        ],
+        "languages": [
+            "English",
+            "Kiswahili"
+        ],
+        "text": "Reads every lease before you sign it. Has renegotiated deposit and exit terms for most of the families we've placed since 2019.",
+        "star": true
     },
     {
         "id": 3,
-        "img": "assets/img/agents/3.jpg",
-        "name": "Gina Mconihon",
-        "post": "Expert at Company",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-        "star": false
+        "img": "assets/img/avatars/aisha-mohamed.svg",
+        "name": "Aisha Mohamed",
+        "post": "Schools and family settling",
+        "areas": [
+            "Karen",
+            "Kitisuru",
+            "Loresho"
+        ],
+        "languages": [
+            "English",
+            "Kiswahili",
+            "Arabic"
+        ],
+        "text": "Handles school placement and the Karen end of the market. Will tell you honestly when a school has a two-year waiting list.",
+        "star": true
     },
     {
         "id": 4,
-        "img": "assets/img/agents/4.jpg",
-        "name": "Oliver Rasky",
-        "post": "Expert at Company",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "img": "assets/img/avatars/peter-njoroge.svg",
+        "name": "Peter Njoroge",
+        "post": "Diplomatic residences",
+        "areas": [
+            "Muthaiga",
+            "Rosslyn",
+            "Spring Valley"
+        ],
+        "languages": [
+            "English",
+            "Kiswahili",
+            "German"
+        ],
+        "text": "Looks after representational residences and heads of mission. Discreet, and used to working with protocol offices.",
         "star": true
     }
 ]
