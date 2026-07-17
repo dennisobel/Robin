@@ -13,7 +13,7 @@ const NAIROBI = [-1.2705, 36.79];
 function priceIcon(item) {
     return L.divIcon({
         className: '',
-        html: `<div class="karibu-pin">${usd(item.monthlyprice)}</div>`,
+        html: `<div class="cxp-pin">${usd(item.monthlyprice)}</div>`,
         iconSize: [64, 26],
         iconAnchor: [32, 26],
     });
@@ -47,7 +47,7 @@ class Banner extends Component {
 
     render() {
         return (
-            <div className="karibu-hero">
+            <div className="cxp-hero">
                 <div className="banner-map">
                     <MapContainer className="map" center={NAIROBI} zoom={12} scrollWheelZoom={false}>
                         <TileLayer
@@ -57,11 +57,11 @@ class Banner extends Component {
                         {listings.map((item) => (
                             <Marker key={item.id} position={[item.lat, item.lng]} icon={priceIcon(item)}>
                                 <Popup>
-                                    <div className="karibu-popup">
+                                    <div className="cxp-popup">
                                         <img src={process.env.PUBLIC_URL + '/' + item.gridimg} alt={item.title} />
-                                        <div className="karibu-popup-body">
+                                        <div className="cxp-popup-body">
                                             <h6> <Link to={`/listing/${item.id}`}>{item.title}</Link> </h6>
-                                            <span className="karibu-card-hood">
+                                            <span className="cxp-card-hood">
                                                 <i className="fas fa-map-marker-alt" />{item.neighbourhood}
                                             </span>
                                         </div>
@@ -72,10 +72,10 @@ class Banner extends Component {
                     </MapContainer>
                 </div>
 
-                <div className="karibu-hero-overlay">
+                <div className="cxp-hero-overlay">
                     <div className="container">
-                        <div className="karibu-hero-card">
-                            <span className="karibu-eyebrow">Posted to Nairobi?</span>
+                        <div className="cxp-hero-card">
+                            <span className="cxp-eyebrow">Posted to Nairobi?</span>
                             <h1>Find a home before you land.</h1>
                             <p>
                                 Furnished homes near the UN, the embassies and the international

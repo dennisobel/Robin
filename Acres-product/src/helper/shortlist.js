@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
  * mounted component, which keeps the heart icons in the header, the map and
  * the results grid in sync.
  */
-const KEY = 'karibu.shortlist';
+const KEY = 'cxp.shortlist';
 const listeners = new Set();
 
 function read() {

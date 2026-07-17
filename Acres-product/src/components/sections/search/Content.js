@@ -53,9 +53,9 @@ function Content() {
     }
 
     return (
-        <div className="karibu-search">
+        <div className="cxp-search">
             {/* Filters */}
-            <div className="karibu-filterbar">
+            <div className="cxp-filterbar">
                 <div className="row align-items-end">
                     {FIELDS.map((f) => (
                         <div key={f.key} className={`${f.col} acr-custom-select mb-2 mb-lg-0`}>
@@ -70,11 +70,11 @@ function Content() {
                 </div>
             </div>
 
-            <div className="karibu-search-body">
+            <div className="cxp-search-body">
                 {/* Results */}
-                <div className="karibu-search-results">
+                <div className="cxp-search-results">
                     <div className="d-flex align-items-center justify-content-between mb-3">
-                        <span className="karibu-resultcount">
+                        <span className="cxp-resultcount">
                             <strong>{results.length}</strong> {results.length === 1 ? 'home' : 'homes'}
                             {activeCount > 0 && (
                                 <>
@@ -99,7 +99,7 @@ function Content() {
                     </div>
 
                     {results.length === 0 ? (
-                        <div className="karibu-empty">
+                        <div className="cxp-empty">
                             <i className="fas fa-map-signs" />
                             <h5>Nothing matches that yet</h5>
                             <p>
@@ -127,7 +127,7 @@ function Content() {
                 </div>
 
                 {/* Map */}
-                <div className="karibu-search-map">
+                <div className="cxp-search-map">
                     <Searchmap items={results} activeId={activeId} onHover={setActiveId} />
                 </div>
             </div>

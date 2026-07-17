@@ -8,7 +8,7 @@ class Relocation extends Component {
     render() {
         return (
             <Fragment>
-                <title>Relocation support — Karibu</title>
+                <title>Relocation support — Expert Homes</title>
                 <meta
                     name="description"
                     content="Schools, visas, shipping, utilities and lease negotiation for families posted to Nairobi."

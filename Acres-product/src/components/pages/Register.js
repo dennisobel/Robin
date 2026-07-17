@@ -6,7 +6,7 @@ class Register extends Component {
     render() {
         return (
             <Fragment>
-                <title>Create an account — Karibu</title>
+                <title>Create an account — Expert Homes</title>
                 <meta name="description" content="Save homes, share your shortlist and get new Nairobi listings that match your brief." />
                 <Header/>
                 <Content/>

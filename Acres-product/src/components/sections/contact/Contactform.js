@@ -12,7 +12,7 @@ class Contactform extends Component {
                                 className="acr-locations bg-bottom bg-norepeat"
                                 style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "/assets/img/misc/bldg.png)" }}
                             >
-                                <img src={process.env.PUBLIC_URL + "/assets/img/scenes/contact.svg"} alt="Karibu office, Gigiri" />
+                                <img src={process.env.PUBLIC_URL + "/assets/img/scenes/contact.svg"} alt="Expert Homes office, Gigiri" />
                                 <div className="row">
                                     <div className="col-sm-6">
                                         <div className="acr-location">

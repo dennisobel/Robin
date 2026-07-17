@@ -1,5 +1,5 @@
 /* ===========================================================================
-   Karibu — product styles layered on top of the template's style.css.
+   Expert Homes — product styles layered on top of the template's style.css.
    Kept in a separate file so the vendor stylesheet stays untouched and this
    can be read as "everything that is ours".
 
@@ -24,7 +24,7 @@
 }
 
 /* --- Wordmark ----------------------------------------------------------- */
-.karibu-brand {
+.cxp-brand {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -33,7 +33,7 @@
   margin-right: 38px;
   flex: 0 0 auto;
 }
-.karibu-brand-mark {
+.cxp-brand-mark {
   width: 36px;
   height: 36px;
   border-radius: 10px;
@@ -45,19 +45,21 @@
   text-align: center;
   flex: 0 0 36px;
 }
-.karibu-brand-word {
+.cxp-brand-word {
   font-size: 20px;
   font-weight: 700;
   color: var(--k-navy);
   letter-spacing: -0.2px;
   line-height: 1.1;
 }
-.karibu-brand-word em {
+.cxp-brand-word em {
   font-style: normal;
   font-weight: 400;
   color: var(--k-blue);
+  /* the mark reads "CXP Homes"; the space is here rather than in the markup */
+  margin-left: 0.28em;
 }
-.karibu-brand-word small {
+.cxp-brand-word small {
   display: block;
   font-size: 10px;
   font-weight: 500;
@@ -65,19 +67,19 @@
   text-transform: uppercase;
   color: var(--k-grey);
 }
-.footer .karibu-brand-word,
-.footer .karibu-brand-word small { color: #fff; }
-.footer .karibu-brand-word em { color: var(--k-blue); }
+.footer .cxp-brand-word,
+.footer .cxp-brand-word small { color: #fff; }
+.footer .cxp-brand-word em { color: var(--k-blue); }
 
 /* --- Map hero ----------------------------------------------------------- */
-.karibu-hero { position: relative; }
-.karibu-hero .banner-map,
-.karibu-hero .map { height: 620px; }
+.cxp-hero { position: relative; }
+.cxp-hero .banner-map,
+.cxp-hero .map { height: 620px; }
 @media (max-width: 991px) {
-  .karibu-hero .banner-map,
-  .karibu-hero .map { height: 460px; }
+  .cxp-hero .banner-map,
+  .cxp-hero .map { height: 460px; }
 }
-.karibu-hero-overlay {
+.cxp-hero-overlay {
   position: absolute;
   z-index: 500; /* above leaflet panes (400) but below its controls popups */
   top: 50%;
@@ -86,7 +88,7 @@
   transform: translateY(-50%);
   pointer-events: none;
 }
-.karibu-hero-card {
+.cxp-hero-card {
   pointer-events: auto;
   background: rgba(255, 255, 255, 0.97);
   border-radius: 14px;
@@ -94,19 +96,19 @@
   padding: 32px;
   max-width: 560px;
 }
-.karibu-hero-card h1 {
+.cxp-hero-card h1 {
   font-size: 34px;
   line-height: 1.2;
   color: var(--k-navy);
   margin-bottom: 10px;
 }
-.karibu-hero-card > p {
+.cxp-hero-card > p {
   color: var(--k-grey);
   margin-bottom: 22px;
 }
 @media (max-width: 575px) {
-  .karibu-hero-card { padding: 22px; }
-  .karibu-hero-card h1 { font-size: 26px; }
+  .cxp-hero-card { padding: 22px; }
+  .cxp-hero-card h1 { font-size: 26px; }
 }
 
 /* --- Native selects -----------------------------------------------------
@@ -130,7 +132,7 @@
 }
 
 /* --- Eyebrow / small caps label ---------------------------------------- */
-.karibu-eyebrow {
+.cxp-eyebrow {
   display: inline-block;
   font-size: 11px;
   font-weight: 700;
@@ -141,7 +143,7 @@
 }
 
 /* --- Chips (amenities, filters, nearby) -------------------------------- */
-.karibu-chips {
+.cxp-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -149,7 +151,7 @@
   margin: 0;
   list-style: none;
 }
-.karibu-chip {
+.cxp-chip {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -161,23 +163,23 @@
   color: var(--k-navy);
   white-space: nowrap;
 }
-.karibu-chip i { color: var(--k-blue); font-size: 12px; }
-.karibu-chip.is-key {
+.cxp-chip i { color: var(--k-blue); font-size: 12px; }
+.cxp-chip.is-key {
   background: rgba(81, 159, 255, 0.1);
   border-color: rgba(81, 159, 255, 0.35);
 }
 
 /* --- Trust bar ---------------------------------------------------------- */
-.karibu-trust {
+.cxp-trust {
   background: var(--k-navy);
   color: #fff;
   padding: 26px 0;
 }
-.karibu-trust p { margin: 0; color: rgba(255, 255, 255, 0.7); font-size: 14px; }
-.karibu-trust strong { color: #fff; display: block; font-size: 22px; line-height: 1.2; }
+.cxp-trust p { margin: 0; color: rgba(255, 255, 255, 0.7); font-size: 14px; }
+.cxp-trust strong { color: #fff; display: block; font-size: 22px; line-height: 1.2; }
 
 /* --- Neighbourhood card ------------------------------------------------- */
-.karibu-hood {
+.cxp-hood {
   display: block;
   position: relative;
   border-radius: var(--k-radius);
@@ -188,22 +190,22 @@
   background-position: center;
   color: #fff;
 }
-.karibu-hood::after {
+.cxp-hood::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(16, 23, 55, 0.9) 0%, rgba(16, 23, 55, 0.15) 60%);
   transition: 0.3s;
 }
-.karibu-hood:hover::after { background: linear-gradient(to top, rgba(81, 159, 255, 0.92) 0%, rgba(16, 23, 55, 0.2) 65%); }
-.karibu-hood-body { position: relative; z-index: 2; padding: 20px; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; }
-.karibu-hood-body h5 { color: #fff; margin: 0 0 2px; font-size: 20px; }
-.karibu-hood-body span { color: rgba(255, 255, 255, 0.85); font-size: 13px; }
-.karibu-hood-meta { margin-top: 10px; font-size: 12px; color: #fff; display: flex; gap: 14px; }
-.karibu-hood-meta i { margin-right: 5px; opacity: 0.8; }
+.cxp-hood:hover::after { background: linear-gradient(to top, rgba(81, 159, 255, 0.92) 0%, rgba(16, 23, 55, 0.2) 65%); }
+.cxp-hood-body { position: relative; z-index: 2; padding: 20px; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; }
+.cxp-hood-body h5 { color: #fff; margin: 0 0 2px; font-size: 20px; }
+.cxp-hood-body span { color: rgba(255, 255, 255, 0.85); font-size: 13px; }
+.cxp-hood-meta { margin-top: 10px; font-size: 12px; color: #fff; display: flex; gap: 14px; }
+.cxp-hood-meta i { margin-right: 5px; opacity: 0.8; }
 
 /* --- Save (shortlist) button ------------------------------------------- */
-.karibu-save {
+.cxp-save {
   border: 0;
   background: #fff;
   width: 38px;
@@ -214,34 +216,34 @@
   transition: 0.2s;
   line-height: 1;
 }
-.karibu-save:hover { color: #e0245e; }
-.karibu-save.is-saved { color: #e0245e; }
-.karibu-save-float { position: absolute; top: 14px; right: 14px; z-index: 3; }
+.cxp-save:hover { color: #e0245e; }
+.cxp-save.is-saved { color: #e0245e; }
+.cxp-save-float { position: absolute; top: 14px; right: 14px; z-index: 3; }
 
 /* --- Search layout ------------------------------------------------------ */
-.karibu-search { display: flex; flex-direction: column; height: calc(100vh - 76px); }
-.karibu-search-body { flex: 1; display: flex; min-height: 0; }
-.karibu-search-results {
+.cxp-search { display: flex; flex-direction: column; height: calc(100vh - 76px); }
+.cxp-search-body { flex: 1; display: flex; min-height: 0; }
+.cxp-search-results {
   width: 46%;
   overflow-y: auto;
   padding: 22px;
   background: var(--k-wash);
 }
-.karibu-search-map { width: 54%; position: relative; }
-.karibu-search-map .map { height: 100%; width: 100%; }
+.cxp-search-map { width: 54%; position: relative; }
+.cxp-search-map .map { height: 100%; width: 100%; }
 @media (max-width: 991px) {
-  .karibu-search { height: auto; }
-  .karibu-search-body { flex-direction: column; }
-  .karibu-search-results, .karibu-search-map { width: 100%; }
-  .karibu-search-map { height: 420px; }
+  .cxp-search { height: auto; }
+  .cxp-search-body { flex-direction: column; }
+  .cxp-search-results, .cxp-search-map { width: 100%; }
+  .cxp-search-map { height: 420px; }
 }
 
-.karibu-filterbar {
+.cxp-filterbar {
   background: #fff;
   border-bottom: 1px solid var(--k-line);
   padding: 14px 22px;
 }
-.karibu-filterbar .acr-select2 {
+.cxp-filterbar .acr-select2 {
   height: 44px;
   padding: 8px 12px;
   font-size: 14px;
@@ -249,7 +251,7 @@
   border: 1px solid var(--k-line);
   border-radius: 6px;
 }
-.karibu-filterbar label {
+.cxp-filterbar label {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.6px;
@@ -258,11 +260,11 @@
   margin-bottom: 4px;
   display: block;
 }
-.karibu-resultcount { font-size: 14px; color: var(--k-grey); }
-.karibu-resultcount strong { color: var(--k-navy); }
+.cxp-resultcount { font-size: 14px; color: var(--k-grey); }
+.cxp-resultcount strong { color: var(--k-navy); }
 
 /* --- Result card -------------------------------------------------------- */
-.karibu-card {
+.cxp-card {
   background: #fff;
   border-radius: var(--k-radius);
   box-shadow: var(--k-shadow);
@@ -271,21 +273,21 @@
   transition: 0.2s;
   position: relative;
 }
-.karibu-card:hover, .karibu-card.is-active { box-shadow: 0 10px 26px rgba(16, 23, 55, 0.18); transform: translateY(-2px); }
-.karibu-card.is-active { outline: 2px solid var(--k-blue); }
-.karibu-card-thumb { position: relative; display: block; height: 190px; background-size: cover; background-position: center; }
-.karibu-card-body { padding: 16px 18px 18px; }
-.karibu-card-body h5 { font-size: 17px; margin: 0 0 4px; }
-.karibu-card-body h5 a { color: var(--k-navy); }
-.karibu-card-body h5 a:hover { color: var(--k-blue); }
-.karibu-card-hood { font-size: 13px; color: var(--k-grey); }
-.karibu-card-hood i { color: var(--k-blue); margin-right: 5px; }
-.karibu-price { font-size: 20px; font-weight: 700; color: var(--k-navy); }
-.karibu-price span { font-size: 13px; font-weight: 400; color: var(--k-grey); }
-.karibu-price-kes { font-size: 12px; color: var(--k-grey); }
-.karibu-card-meta { display: flex; gap: 16px; margin: 12px 0; font-size: 13px; color: var(--k-navy); }
-.karibu-card-meta i { color: var(--k-blue); margin-right: 6px; }
-.karibu-badge {
+.cxp-card:hover, .cxp-card.is-active { box-shadow: 0 10px 26px rgba(16, 23, 55, 0.18); transform: translateY(-2px); }
+.cxp-card.is-active { outline: 2px solid var(--k-blue); }
+.cxp-card-thumb { position: relative; display: block; height: 190px; background-size: cover; background-position: center; }
+.cxp-card-body { padding: 16px 18px 18px; }
+.cxp-card-body h5 { font-size: 17px; margin: 0 0 4px; }
+.cxp-card-body h5 a { color: var(--k-navy); }
+.cxp-card-body h5 a:hover { color: var(--k-blue); }
+.cxp-card-hood { font-size: 13px; color: var(--k-grey); }
+.cxp-card-hood i { color: var(--k-blue); margin-right: 5px; }
+.cxp-price { font-size: 20px; font-weight: 700; color: var(--k-navy); }
+.cxp-price span { font-size: 13px; font-weight: 400; color: var(--k-grey); }
+.cxp-price-kes { font-size: 12px; color: var(--k-grey); }
+.cxp-card-meta { display: flex; gap: 16px; margin: 12px 0; font-size: 13px; color: var(--k-navy); }
+.cxp-card-meta i { color: var(--k-blue); margin-right: 6px; }
+.cxp-badge {
   position: absolute; top: 14px; left: 14px; z-index: 3;
   background: var(--k-teal); color: #fff;
   font-size: 11px; font-weight: 600; letter-spacing: 0.4px;
@@ -293,13 +295,13 @@
 }
 
 /* --- Empty state -------------------------------------------------------- */
-.karibu-empty { text-align: center; padding: 60px 20px; }
-.karibu-empty i { font-size: 40px; color: var(--k-blue); opacity: 0.5; margin-bottom: 14px; display: block; }
-.karibu-empty h5 { color: var(--k-navy); }
-.karibu-empty p { color: var(--k-grey); }
+.cxp-empty { text-align: center; padding: 60px 20px; }
+.cxp-empty i { font-size: 40px; color: var(--k-blue); opacity: 0.5; margin-bottom: 14px; display: block; }
+.cxp-empty h5 { color: var(--k-navy); }
+.cxp-empty p { color: var(--k-grey); }
 
 /* --- Map popup ---------------------------------------------------------- */
-.karibu-pin {
+.cxp-pin {
   background: var(--k-navy);
   color: #fff;
   border-radius: 999px;
@@ -311,67 +313,67 @@
   border: 2px solid #fff;
   text-align: center;
 }
-.karibu-pin.is-active { background: var(--k-blue); }
-.karibu-pin.is-saved::after { content: ' \2665'; color: #ff8fb0; }
+.cxp-pin.is-active { background: var(--k-blue); }
+.cxp-pin.is-saved::after { content: ' \2665'; color: #ff8fb0; }
 .leaflet-popup-content { margin: 0; width: 240px !important; }
 .leaflet-popup-content-wrapper { border-radius: var(--k-radius); overflow: hidden; padding: 0; }
-.karibu-popup img { width: 100%; height: 120px; object-fit: cover; display: block; }
-.karibu-popup-body { padding: 12px 14px 14px; }
-.karibu-popup-body h6 { margin: 0 0 4px; font-size: 14px; }
-.karibu-popup-body h6 a { color: var(--k-navy); }
+.cxp-popup img { width: 100%; height: 120px; object-fit: cover; display: block; }
+.cxp-popup-body { padding: 12px 14px 14px; }
+.cxp-popup-body h6 { margin: 0 0 4px; font-size: 14px; }
+.cxp-popup-body h6 a { color: var(--k-navy); }
 
 /* --- Nearby list (the expat differentiator) ---------------------------- */
-.karibu-nearby { list-style: none; padding: 0; margin: 0; }
-.karibu-nearby li {
+.cxp-nearby { list-style: none; padding: 0; margin: 0; }
+.cxp-nearby li {
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 12px 0;
   border-bottom: 1px solid var(--k-line);
 }
-.karibu-nearby li:last-child { border-bottom: 0; }
-.karibu-nearby-icon {
+.cxp-nearby li:last-child { border-bottom: 0; }
+.cxp-nearby-icon {
   width: 38px; height: 38px; border-radius: 50%;
   background: var(--k-wash); color: var(--k-blue);
   display: flex; align-items: center; justify-content: center;
   flex: 0 0 38px;
 }
-.karibu-nearby-name { color: var(--k-navy); font-weight: 500; display: block; line-height: 1.3; }
-.karibu-nearby-type { font-size: 12px; color: var(--k-grey); text-transform: capitalize; }
-.karibu-nearby-dist { margin-left: auto; text-align: right; white-space: nowrap; }
-.karibu-nearby-dist strong { display: block; color: var(--k-navy); font-size: 14px; }
-.karibu-nearby-dist span { font-size: 12px; color: var(--k-grey); }
+.cxp-nearby-name { color: var(--k-navy); font-weight: 500; display: block; line-height: 1.3; }
+.cxp-nearby-type { font-size: 12px; color: var(--k-grey); text-transform: capitalize; }
+.cxp-nearby-dist { margin-left: auto; text-align: right; white-space: nowrap; }
+.cxp-nearby-dist strong { display: block; color: var(--k-navy); font-size: 14px; }
+.cxp-nearby-dist span { font-size: 12px; color: var(--k-grey); }
 
 /* --- Consultant card ----------------------------------------------------
    The template's .listing-author sizing doesn't reach inside .sidebar-widget,
    which left the avatar rendering at full column width. Size it here. */
-.karibu-consultant {
+.cxp-consultant {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 16px;
 }
-.karibu-consultant img {
+.cxp-consultant img {
   width: 56px;
   height: 56px;
   flex: 0 0 56px;
   border-radius: 50%;
   object-fit: cover;
 }
-.karibu-consultant strong { color: var(--k-navy); display: block; line-height: 1.3; }
-.karibu-consultant span { font-size: 13px; color: var(--k-grey); }
+.cxp-consultant strong { color: var(--k-navy); display: block; line-height: 1.3; }
+.cxp-consultant span { font-size: 13px; color: var(--k-grey); }
 
 /* --- Listing hero image ------------------------------------------------- */
-.karibu-hero-img {
+.cxp-hero-img {
   height: 460px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-@media (max-width: 767px) { .karibu-hero-img { height: 280px; } }
+@media (max-width: 767px) { .cxp-hero-img { height: 280px; } }
 
 /* --- Key facts strip on the listing page ------------------------------- */
-.karibu-facts {
+.cxp-facts {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
@@ -380,18 +382,18 @@
   border-radius: var(--k-radius);
   overflow: hidden;
 }
-.karibu-fact { background: #fff; padding: 16px; text-align: center; }
-.karibu-fact i { color: var(--k-blue); font-size: 18px; display: block; margin-bottom: 6px; }
-.karibu-fact strong { display: block; color: var(--k-navy); font-size: 15px; }
-.karibu-fact span { font-size: 12px; color: var(--k-grey); }
-@media (max-width: 575px) { .karibu-facts { grid-template-columns: repeat(2, 1fr); } }
+.cxp-fact { background: #fff; padding: 16px; text-align: center; }
+.cxp-fact i { color: var(--k-blue); font-size: 18px; display: block; margin-bottom: 6px; }
+.cxp-fact strong { display: block; color: var(--k-navy); font-size: 15px; }
+.cxp-fact span { font-size: 12px; color: var(--k-grey); }
+@media (max-width: 575px) { .cxp-facts { grid-template-columns: repeat(2, 1fr); } }
 
 /* --- Steps -------------------------------------------------------------- */
-.karibu-step { text-align: center; padding: 0 12px; }
-.karibu-step-num {
+.cxp-step { text-align: center; padding: 0 12px; }
+.cxp-step-num {
   width: 46px; height: 46px; border-radius: 50%;
   background: rgba(81, 159, 255, 0.12); color: var(--k-blue);
   font-weight: 700; line-height: 46px; margin: 0 auto 14px;
 }
-.karibu-step h5 { color: var(--k-navy); }
-.karibu-step p { color: var(--k-grey); margin: 0; }
+.cxp-step h5 { color: var(--k-navy); }
+.cxp-step p { color: var(--k-grey); margin: 0; }

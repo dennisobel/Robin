@@ -60,7 +60,7 @@ class Footer extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-7">
-                                <p className="m-0">© {new Date().getFullYear()} Karibu Homes. All rights reserved.</p>
+                                <p className="m-0">© {new Date().getFullYear()} Expert Homes. All rights reserved.</p>
                             </div>
                             <div className="col-lg-5">
                                 <ul>

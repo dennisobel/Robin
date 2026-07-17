@@ -8,7 +8,7 @@ class Faq extends Component {
     render() {
         return (
             <Fragment>
-                <title>Questions expats ask about renting in Nairobi — Karibu</title>
+                <title>Questions expats ask about renting in Nairobi — Expert Homes</title>
                 <meta name="description" content="Deposits, generators, boreholes, school waiting lists, lease currency and six-month leases — answered plainly." />
                 <Header/>
                 <Breadcrumb breadcrumb={{pagename:"FAQ's"}} />

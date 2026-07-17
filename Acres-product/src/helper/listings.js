@@ -19,14 +19,16 @@ const BUDGETS = {
     '$6,000+/mo': [6000, Infinity],
 };
 
+// Must match the first entry of each list in src/data/select.json — that entry
+// is the "no constraint" option, and ANY below is what recognises it.
 export const defaultFilters = {
-    neighbourhood: 'Any neighbourhood',
-    budget: 'Any budget',
+    neighbourhood: 'Any',
+    budget: 'Any',
     beds: 'Any',
-    furnishing: 'Any furnishing',
-    type: 'Any type',
-    school: 'Any school',
-    lease: 'Any lease',
+    furnishing: 'Any',
+    type: 'Any',
+    school: 'Any',
+    lease: 'Any',
     sort: 'Most relevant',
 };
 

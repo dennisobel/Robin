@@ -1,6 +1,6 @@
 {
     "neighbourhoodlist": [
-        "Any neighbourhood",
+        "Any",
         "Gigiri",
         "Runda",
         "Rosslyn",
@@ -15,7 +15,7 @@
         "Karen"
     ],
     "budgetlist": [
-        "Any budget",
+        "Any",
         "Under $2,000/mo",
         "$2,000 - $3,000/mo",
         "$3,000 - $4,500/mo",
@@ -31,20 +31,20 @@
         "5+ bedrooms"
     ],
     "furnishinglist": [
-        "Any furnishing",
+        "Any",
         "Fully furnished",
         "Semi-furnished",
         "Unfurnished"
     ],
     "typelist": [
-        "Any type",
+        "Any",
         "Villa",
         "House",
         "Townhouse",
         "Apartment"
     ],
     "schoollist": [
-        "Any school",
+        "Any",
         "International School of Kenya",
         "Rosslyn Academy",
         "Brookhouse School",
@@ -53,7 +53,7 @@
         "Hillcrest International School"
     ],
     "leaselist": [
-        "Any lease",
+        "Any",
         "6 months",
         "12 months",
         "24 months"

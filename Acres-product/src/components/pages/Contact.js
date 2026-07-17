@@ -8,7 +8,7 @@ class Contact extends Component {
     render() {
         return (
             <Fragment>
-                <title>Contact Karibu — Gigiri, Nairobi</title>
+                <title>Contact Expert Homes — Gigiri, Nairobi</title>
                 <meta name="description" content="Send us your posting dates and what the family needs. We reply with a shortlist within two working days." />
                 <Header/>
                 <Breadcrumb breadcrumb={{ pagename: 'Contact' }} />

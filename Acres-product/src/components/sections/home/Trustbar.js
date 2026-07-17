@@ -10,7 +10,7 @@ const stats = [
 class Trustbar extends Component {
     render() {
         return (
-            <div className="karibu-trust">
+            <div className="cxp-trust">
                 <div className="container">
                     <div className="row">
                         {stats.map((s, i) => (

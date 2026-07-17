@@ -19,7 +19,7 @@ function Savebutton({ id, className = '' }) {
             aria-pressed={saved}
             aria-label={saved ? 'Remove from shortlist' : 'Save to shortlist'}
             title={saved ? 'Remove from shortlist' : 'Save to shortlist'}
-            className={`karibu-save ${saved ? 'is-saved' : ''} ${className}`.trim()}
+            className={`cxp-save ${saved ? 'is-saved' : ''} ${className}`.trim()}
         >
             <i className={saved ? 'fas fa-heart' : 'far fa-heart'} />
         </button>

@@ -14,7 +14,7 @@ function Content() {
         <div className="section">
             <div className="container">
                 {saved.length === 0 ? (
-                    <div className="karibu-empty">
+                    <div className="cxp-empty">
                         <i className="far fa-heart" />
                         <h5>Your shortlist is empty</h5>
                         <p>

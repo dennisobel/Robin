@@ -8,7 +8,7 @@ import { useShortlist } from '../../../helper/shortlist';
 const NAIROBI = [-1.2705, 36.79];
 
 function pin(item, active, saved) {
-    const cls = ['karibu-pin', active ? 'is-active' : '', saved ? 'is-saved' : ''].join(' ').trim();
+    const cls = ['cxp-pin', active ? 'is-active' : '', saved ? 'is-saved' : ''].join(' ').trim();
     return L.divIcon({
         className: '',
         html: `<div class="${cls}">${usd(item.monthlyprice)}</div>`,
@@ -49,14 +49,14 @@ function Searchmap({ items, activeId, onHover }) {
                     }}
                 >
                     <Popup>
-                        <div className="karibu-popup">
+                        <div className="cxp-popup">
                             <img src={process.env.PUBLIC_URL + '/' + item.gridimg} alt={item.title} />
-                            <div className="karibu-popup-body">
+                            <div className="cxp-popup-body">
                                 <h6> <Link to={`/listing/${item.id}`}>{item.title}</Link> </h6>
-                                <span className="karibu-card-hood">
+                                <span className="cxp-card-hood">
                                     <i className="fas fa-map-marker-alt" />{item.neighbourhood}
                                 </span>
-                                <div className="karibu-card-meta mt-2 mb-0">
+                                <div className="cxp-card-meta mt-2 mb-0">
                                     <span><i className="flaticon-bedroom" />{item.beds}</span>
                                     <span><i className="flaticon-bathroom" />{item.bathrooms}</span>
                                     <span>{usd(item.monthlyprice)}/mo</span>

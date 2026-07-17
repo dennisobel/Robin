@@ -7,7 +7,7 @@ class Search extends Component {
     render() {
         return (
             <Fragment>
-                <title>Find a home in Nairobi — Karibu</title>
+                <title>Find a home in Nairobi — Expert Homes</title>
                 <meta
                     name="description"
                     content="Search furnished homes across Gigiri, Runda, Karen, Westlands and Kilimani. Filter by budget, bedrooms, furnishing and distance to international schools."

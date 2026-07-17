@@ -8,7 +8,7 @@ class Consultants extends Component {
     render() {
         return (
             <Fragment>
-                <title>Your relocation consultants — Karibu</title>
+                <title>Your relocation consultants — Expert Homes</title>
                 <meta
                     name="description"
                     content="The people who will meet you at the airport, walk the houses with you and negotiate your lease."

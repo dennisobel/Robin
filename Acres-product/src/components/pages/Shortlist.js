@@ -8,7 +8,7 @@ class Shortlist extends Component {
     render() {
         return (
             <Fragment>
-                <title>Your shortlist — Karibu</title>
+                <title>Your shortlist — Expert Homes</title>
                 <meta name="description" content="The Nairobi homes you've saved, ready to send to your relocation consultant." />
                 <Header />
                 <Breadcrumb breadcrumb={{ pagename: 'Your shortlist' }} />

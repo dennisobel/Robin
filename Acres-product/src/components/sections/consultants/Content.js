@@ -18,7 +18,7 @@ class Content extends Component {
                     <div className="row">
                         {agents.map((a) => (
                             <div key={a.id} className="col-lg-6">
-                                <div className="karibu-card">
+                                <div className="cxp-card">
                                     <div className="d-flex p-3">
                                         <img
                                             src={process.env.PUBLIC_URL + '/' + a.img}
@@ -27,15 +27,15 @@ class Content extends Component {
                                         />
                                         <div className="ps-3">
                                             <h5 className="mb-1">{a.name}</h5>
-                                            <span className="karibu-eyebrow">{a.post}</span>
+                                            <span className="cxp-eyebrow">{a.post}</span>
                                             <p className="mb-2">{a.text}</p>
-                                            <ul className="karibu-chips">
+                                            <ul className="cxp-chips">
                                                 {a.areas.map((area) => (
-                                                    <li key={area} className="karibu-chip is-key">
+                                                    <li key={area} className="cxp-chip is-key">
                                                         <i className="fas fa-map-marker-alt" />{area}
                                                     </li>
                                                 ))}
-                                                <li className="karibu-chip">
+                                                <li className="cxp-chip">
                                                     <i className="fas fa-language" />{a.languages.join(', ')}
                                                 </li>
                                             </ul>

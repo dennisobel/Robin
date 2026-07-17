@@ -26,13 +26,13 @@ class Neighbourhoods extends Component {
                             <div key={n.id} className="col-lg-4 col-md-6">
                                 <Link
                                     to={`/search?neighbourhood=${encodeURIComponent(n.name)}`}
-                                    className="karibu-hood"
+                                    className="cxp-hood"
                                     style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/${n.img})` }}
                                 >
-                                    <div className="karibu-hood-body">
+                                    <div className="cxp-hood-body">
                                         <h5>{n.name}</h5>
                                         <span>{n.tagline}</span>
-                                        <div className="karibu-hood-meta">
+                                        <div className="cxp-hood-meta">
                                             <span><i className="fas fa-car" />{n.commute}</span>
                                             <span><i className="fas fa-tag" />from {usd(n.from)}/mo</span>
                                         </div>

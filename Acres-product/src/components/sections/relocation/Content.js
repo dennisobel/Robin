@@ -37,7 +37,7 @@ class Content extends Component {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6">
-                                <span className="karibu-eyebrow">Who we work with</span>
+                                <span className="cxp-eyebrow">Who we work with</span>
                                 <h2 className="title">Built around posting cycles</h2>
                                 <p>
                                     Most of our families arrive in two waves — July and January —
@@ -45,12 +45,12 @@ class Content extends Component {
                                     or an international school. We plan around that calendar, which
                                     is why we start talking to you months before you land.
                                 </p>
-                                <ul className="karibu-chips mt-3">
-                                    <li className="karibu-chip is-key"><i className="fas fa-check" />UN agencies</li>
-                                    <li className="karibu-chip is-key"><i className="fas fa-check" />Embassies &amp; high commissions</li>
-                                    <li className="karibu-chip is-key"><i className="fas fa-check" />International NGOs</li>
-                                    <li className="karibu-chip is-key"><i className="fas fa-check" />International schools</li>
-                                    <li className="karibu-chip is-key"><i className="fas fa-check" />Corporate postings</li>
+                                <ul className="cxp-chips mt-3">
+                                    <li className="cxp-chip is-key"><i className="fas fa-check" />UN agencies</li>
+                                    <li className="cxp-chip is-key"><i className="fas fa-check" />Embassies &amp; high commissions</li>
+                                    <li className="cxp-chip is-key"><i className="fas fa-check" />International NGOs</li>
+                                    <li className="cxp-chip is-key"><i className="fas fa-check" />International schools</li>
+                                    <li className="cxp-chip is-key"><i className="fas fa-check" />Corporate postings</li>
                                 </ul>
                                 <Link to="/contact" className="btn-custom primary mt-4">
                                     Talk to a consultant <i className="fas fa-arrow-right" />

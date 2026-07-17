@@ -1,4 +1,4 @@
-# Karibu — Nairobi homes for expats
+# Expert Homes — Nairobi homes for expats
 
 A map-first rental search for families posted to Nairobi: UN, embassies, NGOs and
 international schools. Furnished homes in the Gigiri belt, Karen, Westlands and

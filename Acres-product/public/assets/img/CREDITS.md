@@ -32,7 +32,7 @@ Each file is the Pexels photo of that id, fetched at `w=1280&h=850&fit=crop`
 |---|---|
 | `gigiri-garden-villa-4br.jpg` | 7031581 |
 | `runda-family-villa-5br.jpg` | 7031604 |
-| `karen-colonial-house-4br.jpg` | 14011565 |
+| `karen-colonial-house-4br.jpg` | 1666504 |
 | `muthaiga-residence-5br.jpg` | 7031406 |
 | `lavington-townhouse-3br.jpg` | 10486073 |
 | `westlands-apartment-2br.jpg` | 323780 |
@@ -40,8 +40,8 @@ Each file is the Pexels photo of that id, fetched at `w=1280&h=850&fit=crop`
 | `kitisuru-villa-4br.jpg` | 6342356 |
 | `rosslyn-townhouse-4br.jpg` | 10628470 |
 | `nyari-compound-home-4br.jpg` | 3958954 |
-| `spring-valley-garden-apartment-3br.jpg` | 2280844 |
-| `loresho-family-house-4br.jpg` | 1666504 |
+| `spring-valley-garden-apartment-3br.jpg` | 1438832 |
+| `loresho-family-house-4br.jpg` | 2280844 |
 
 ### Shared rooms — `rooms/`
 

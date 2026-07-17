@@ -33,8 +33,8 @@ class Howitworks extends Component {
                     <div className="row">
                         {steps.map((s) => (
                             <div key={s.n} className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                <div className="karibu-step">
-                                    <div className="karibu-step-num">{s.n}</div>
+                                <div className="cxp-step">
+                                    <div className="cxp-step-num">{s.n}</div>
                                     <h5>{s.title}</h5>
                                     <p>{s.text}</p>
                                 </div>

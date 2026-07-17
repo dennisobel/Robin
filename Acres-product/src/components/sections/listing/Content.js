@@ -34,7 +34,7 @@ const NEARBY_ICON = {
 
 const pin = L.divIcon({
     className: '',
-    html: '<div class="karibu-pin is-active">Here</div>',
+    html: '<div class="cxp-pin is-active">Here</div>',
     iconSize: [56, 26],
     iconAnchor: [28, 26],
 });
@@ -57,7 +57,7 @@ function Content() {
 
     return (
         <div className="section pt-0">
-            <title>{`${item.title}, ${item.neighbourhood} — ${usd(item.monthlyprice)}/month | Karibu`}</title>
+            <title>{`${item.title}, ${item.neighbourhood} — ${usd(item.monthlyprice)}/month | Expert Homes`}</title>
             <meta
                 name="description"
                 content={`${item.beds}-bedroom ${item.propertyType.toLowerCase()} in ${item.neighbourhood}, Nairobi. ${item.furnished}, ${item.leaseMin}-month minimum lease, available ${item.available}.`}
@@ -71,7 +71,7 @@ function Content() {
                     {gallery.map((img, i) => (
                         <div key={i}>
                             <div
-                                className="karibu-hero-img"
+                                className="cxp-hero-img"
                                 style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/${img})` }}
                             />
                         </div>
@@ -79,7 +79,7 @@ function Content() {
                 </Slider>
             ) : (
                 <div
-                    className="karibu-hero-img"
+                    className="cxp-hero-img"
                     style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/${gallery[0]})` }}
                 />
             )}
@@ -90,9 +90,9 @@ function Content() {
                     <div className="col-lg-8">
                         <div className="d-flex align-items-start justify-content-between mb-2">
                             <div>
-                                <span className="karibu-eyebrow">{item.propertyType} · {item.neighbourhood}</span>
+                                <span className="cxp-eyebrow">{item.propertyType} · {item.neighbourhood}</span>
                                 <h2 className="mb-1">{item.title}</h2>
-                                <span className="karibu-card-hood">
+                                <span className="cxp-card-hood">
                                     <i className="fas fa-map-marker-alt" />{item.neighbourhood}, Nairobi
                                 </span>
                             </div>
@@ -100,25 +100,25 @@ function Content() {
                         </div>
 
                         <div className="mb-4">
-                            <span className="karibu-price">{usd(item.monthlyprice)}<span> /month</span></span>
-                            <span className="karibu-price-kes d-block">≈ {kes(item.kes)} per month</span>
+                            <span className="cxp-price">{usd(item.monthlyprice)}<span> /month</span></span>
+                            <span className="cxp-price-kes d-block">≈ {kes(item.kes)} per month</span>
                         </div>
 
                         {/* Key facts */}
-                        <div className="karibu-facts mb-4">
-                            <div className="karibu-fact">
+                        <div className="cxp-facts mb-4">
+                            <div className="cxp-fact">
                                 <i className="flaticon-bedroom" />
                                 <strong>{item.beds}</strong><span>Bedrooms</span>
                             </div>
-                            <div className="karibu-fact">
+                            <div className="cxp-fact">
                                 <i className="flaticon-bathroom" />
                                 <strong>{item.bathrooms}</strong><span>Bathrooms</span>
                             </div>
-                            <div className="karibu-fact">
+                            <div className="cxp-fact">
                                 <i className="flaticon-ruler" />
                                 <strong>{new Intl.NumberFormat().format(item.area)}</strong><span>Sq ft</span>
                             </div>
-                            <div className="karibu-fact">
+                            <div className="cxp-fact">
                                 <i className="fas fa-couch" />
                                 <strong>{item.furnished.replace('Fully furnished', 'Furnished')}</strong><span>Furnishing</span>
                             </div>
@@ -133,21 +133,21 @@ function Content() {
                         {/* Lease terms — the questions asked on every first call */}
                         <div className="acr-listing-section mt-4">
                             <h4>Lease terms</h4>
-                            <ul className="karibu-chips">
-                                <li className="karibu-chip is-key">
+                            <ul className="cxp-chips">
+                                <li className="cxp-chip is-key">
                                     <i className="fas fa-calendar-check" />Available {item.available}
                                 </li>
-                                <li className="karibu-chip is-key">
+                                <li className="cxp-chip is-key">
                                     <i className="fas fa-file-signature" />Minimum {item.leaseMin} months
                                 </li>
-                                <li className="karibu-chip">
+                                <li className="cxp-chip">
                                     <i className="fas fa-shield-alt" />{item.security}
                                 </li>
-                                <li className="karibu-chip">
+                                <li className="cxp-chip">
                                     <i className="fas fa-car" />{item.parking} parking spaces
                                 </li>
                                 {item.compound && (
-                                    <li className="karibu-chip"><i className="fas fa-users" />Shared compound</li>
+                                    <li className="cxp-chip"><i className="fas fa-users" />Shared compound</li>
                                 )}
                             </ul>
                         </div>
@@ -155,9 +155,9 @@ function Content() {
                         {/* Amenities */}
                         <div className="acr-listing-section mt-4">
                             <h4>What's included</h4>
-                            <ul className="karibu-chips">
+                            <ul className="cxp-chips">
                                 {item.amenities.map((a, i) => (
-                                    <li key={i} className="karibu-chip">
+                                    <li key={i} className="cxp-chip">
                                         <i className="fas fa-check" />{a}
                                     </li>
                                 ))}
@@ -168,17 +168,17 @@ function Content() {
                         <div className="acr-listing-section mt-4">
                             <h4>What's nearby</h4>
                             <p className="text-muted">Driving times are typical for a weekday morning.</p>
-                            <ul className="karibu-nearby">
+                            <ul className="cxp-nearby">
                                 {item.nearby.map((n, i) => (
                                     <li key={i}>
-                                        <span className="karibu-nearby-icon">
+                                        <span className="cxp-nearby-icon">
                                             <i className={NEARBY_ICON[n.type] || 'fas fa-map-pin'} />
                                         </span>
                                         <span>
-                                            <span className="karibu-nearby-name">{n.name}</span>
-                                            <span className="karibu-nearby-type">{n.type}</span>
+                                            <span className="cxp-nearby-name">{n.name}</span>
+                                            <span className="cxp-nearby-type">{n.type}</span>
                                         </span>
-                                        <span className="karibu-nearby-dist">
+                                        <span className="cxp-nearby-dist">
                                             <strong>{n.mins} min</strong>
                                             <span>{n.km} km</span>
                                         </span>
@@ -213,7 +213,7 @@ function Content() {
                         <div className="sidebar sidebar-right">
                             <div className="sidebar-widget">
                                 <h5>Your consultant</h5>
-                                <div className="karibu-consultant">
+                                <div className="cxp-consultant">
                                     <img src={process.env.PUBLIC_URL + '/' + item.authorimg} alt={item.authorname} />
                                     <div>
                                         <strong>{item.authorname}</strong>
