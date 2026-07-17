@@ -15,6 +15,15 @@ class Content extends Component {
                             walks the houses with you and sits in the lease negotiation.
                         </p>
                     </div>
+                    <div className="row mb-5">
+                        <div className="col-12">
+                            <img
+                                className="img-fluid rounded"
+                                src={process.env.PUBLIC_URL + '/assets/img/pages/consultants-team.jpg'}
+                                alt="The Expert Homes relocation team at work"
+                            />
+                        </div>
+                    </div>
                     <div className="row">
                         {agents.map((a) => (
                             <div key={a.id} className="col-lg-6">

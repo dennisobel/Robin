@@ -63,8 +63,20 @@ Each file is the Pexels photo of that id, fetched at `w=1280&h=850&fit=crop`
 | `lavington.jpg` | 10872771 |
 | `kilimani.jpg` | 16638211 |
 
-## Generated placeholders
+### Page content — `pages/`
 
-`avatars/` and `scenes/` are SVGs generated for this project (initials avatars
-for consultants, brand backdrops for page headers). They are ours, no licence
-applies. Consultant headshots should replace `avatars/` when they exist.
+| File | Pexels id |
+|---|---|
+| `about-story.jpg` | 7688336 |
+| `relocation-family.jpg` | 10486073 |
+| `faq-side.jpg` | 3184292 |
+| `shortlist-empty.jpg` | 106399 |
+| `consultants-team.jpg` | 3184360 |
+| `contact-office.jpg` | 7688336 |
+| `auth-1.jpg` | 7031581 |
+| `auth-2.jpg` | 1438832 |
+| `auth-3.jpg` | 11114194 |
+
+These stand in for the About, Relocation, FAQ, Shortlist, Consultants, Contact and
+Login/Signup pages. Like the home photos, they're illustrative stock — replace with
+real photography of the actual team, office and homes before launch.

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 const images = [
-    { img: 'assets/img/scenes/auth-1.svg', title: "Claire, UNEP — Runda", text: "We were still in Geneva when the walkthrough videos arrived. We picked the house on a Tuesday and moved in straight from the airport." },
-    { img: 'assets/img/scenes/auth-2.svg', title: "Michael, German Embassy — Gigiri", text: "They talked us out of the house we loved because the generator hadn't run in a year. That cost them a commission and won our trust." },
-    { img: 'assets/img/scenes/auth-3.svg', title: "Sarah, INGO — Rosslyn", text: "We were set on Karen until they showed us what the school run actually looks like at 7am. Our daughter now walks to school." },
+    { img: 'assets/img/pages/auth-1.jpg', title: "Claire, UNEP — Runda", text: "We were still in Geneva when the walkthrough videos arrived. We picked the house on a Tuesday and moved in straight from the airport." },
+    { img: 'assets/img/pages/auth-2.jpg', title: "Michael, German Embassy — Gigiri", text: "They talked us out of the house we loved because the generator hadn't run in a year. That cost them a commission and won our trust." },
+    { img: 'assets/img/pages/auth-3.jpg', title: "Sarah, INGO — Rosslyn", text: "We were set on Karen until they showed us what the school run actually looks like at 7am. Our daughter now walks to school." },
 ];
 
 class Content extends Component {

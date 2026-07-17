@@ -14,8 +14,14 @@ function Content() {
         <div className="section">
             <div className="container">
                 {saved.length === 0 ? (
-                    <div className="cxp-empty">
-                        <i className="far fa-heart" />
+                        <div className="cxp-empty">
+                            <img
+                                className="img-fluid rounded mb-3"
+                                style={{ maxWidth: 320 }}
+                                src={process.env.PUBLIC_URL + '/assets/img/pages/shortlist-empty.jpg'}
+                                alt="A home waiting to be shortlisted"
+                            />
+                            <i className="far fa-heart" />
                         <h5>Your shortlist is empty</h5>
                         <p>
                             Tap the heart on any home and it'll appear here — ready to send to

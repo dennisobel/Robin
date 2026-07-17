@@ -38,6 +38,11 @@ class Contactform extends Component {
                             </div>
                         </div>
                         <div className="col-lg-7">
+                            <img
+                                className="img-fluid rounded mb-4"
+                                src={process.env.PUBLIC_URL + "/assets/img/pages/contact-office.jpg"}
+                                alt="The Expert Homes office in Gigiri, Nairobi"
+                            />
                             <div className="section-title-wrap section-header">
                                 <h5 className="custom-primary">Send us your brief</h5>
                                 <h2 className="title">Tell us when you land</h2>

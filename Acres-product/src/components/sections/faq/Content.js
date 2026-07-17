@@ -41,6 +41,11 @@ class Content extends Component {
 
                         <div className="col-lg-4">
                             <div className="sidebar sidebar-right">
+                                <img
+                                    className="img-fluid rounded mb-4"
+                                    src={process.env.PUBLIC_URL + '/assets/img/pages/faq-side.jpg'}
+                                    alt="A family settling into their new Nairobi home"
+                                />
                                 <div className="sidebar-widget">
                                     <h5>Still deciding?</h5>
                                     <p className="text-muted">

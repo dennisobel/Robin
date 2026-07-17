@@ -10,8 +10,8 @@ class Story extends Component {
                         <div className="col-lg-6">
                             <img
                                 className="img-fluid rounded"
-                                src={process.env.PUBLIC_URL + '/assets/img/scenes/office.svg'}
-                                alt="Expert Homes, Gigiri"
+                                src={process.env.PUBLIC_URL + '/assets/img/pages/about-story.jpg'}
+                                alt="The Expert Homes team in their Gigiri office"
                             />
                         </div>
                         <div className="col-lg-6 mt-4 mt-lg-0">
